@@ -1,30 +1,17 @@
-import "./globals.css";
-import { Inter } from "next/font/google";
-import { ReactQueryClientProvider } from "@/utils/react-query";
-import Navigation from "@/components/Navigation";
-import Footer from "@/components/Footer";
+import About from "@/components/About";
+import Join from "@/components/Join";
+import Landing from "@/components/Landing";
+import What from "@/components/What";
 
-const inter = Inter({ subsets: ["latin"] });
-
-export const metadata = {
-  title: "Fencing Website",
-  description: "The Offical Fencing Club at UCR",
-};
-
-type LayoutProps = {
-  children: React.ReactNode;
-};
-
-export default function RootLayout({ children }: LayoutProps) {
+const Home = () => {
   return (
-    <html lang="en">
-      <body className={inter.className}>
-        <ReactQueryClientProvider>
-          <Navigation />
-          {children}
-        </ReactQueryClientProvider>
-        <Footer />
-      </body>
-    </html>
+    <div className="flex h-screen w-screen items-center justify-center">
+      <Landing />
+      <About />
+      <What />
+      <Join />
+    </div>
   );
-}
+};
+
+export default Home;
