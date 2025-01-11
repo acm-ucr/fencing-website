@@ -10,9 +10,9 @@ const Title = () => {
         height: "74px",
         width: "510px",
         borderColor: "#008CFF",
+        borderWidth: "3px",
         fontSize: "28px",
         fontWeight: "700",
-        borderWidth: "3px",
       }}
     >
       Types of Fencing Swords
