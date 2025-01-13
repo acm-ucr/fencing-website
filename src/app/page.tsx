@@ -12,11 +12,12 @@ const Home = () => {
       <What />
       <Join />
       <BoardCard
-      position="President"
-      name="John Doe"
-      email="johndoe@exmaple.com"
+        position="President"
+        image="placeholder.png"
+        name="John Doe"
+        email="johndoe@example.com"
       />
-          </div>
+    </div>
   );
 };
 
