@@ -1,4 +1,5 @@
 import About from "@/components/About";
+import BoardCard from "@/components/BoardCard";
 import Join from "@/components/Join";
 import Landing from "@/components/Landing";
 import What from "@/components/What";
@@ -10,7 +11,12 @@ const Home = () => {
       <About />
       <What />
       <Join />
-    </div>
+      <BoardCard
+      position="President"
+      name="John Doe"
+      email="johndoe@exmaple.com"
+      />
+          </div>
   );
 };
 
