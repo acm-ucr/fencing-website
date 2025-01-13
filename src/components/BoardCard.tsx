@@ -14,14 +14,14 @@ const BoardCard: React.FC<BoardCardProps> = ({
   image,
 }) => {
   return (
-    <div className="board-card rounded-lg bg-gray-800 p-4 text-white shadow-lg">
-      <h3 className="board-card-title mb-2 text-center text-xl font-bold">
+    <div className="board-card square-lg bg-gray-800 p-4 text-white shadow-lg">
+      <h3 className="board-card-title mb-2 text-center text-xl font-bold text-blue-500">
         {position}
       </h3>
       <div className="board-card-image mb-4 flex justify-center">
         <img
-          className="h-24 w-24 rounded-full border-2 border-gray-500 object-cover"
-          src={image || "placeholder.png"} // Replace with actual placeholder path
+          className="h-40 w-40 rounded-lg border-2 border-gray-500 object-cover"
+          src={image || "placeholder.png"} 
           alt={name ? `${name}'s profile` : "Default profile"}
         />
       </div>
