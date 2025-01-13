@@ -1,5 +1,4 @@
 import About from "@/components/About";
-import BoardCard from "@/components/BoardCard";
 import Join from "@/components/Join";
 import Landing from "@/components/Landing";
 import What from "@/components/What";
@@ -11,12 +10,6 @@ const Home = () => {
       <About />
       <What />
       <Join />
-      <BoardCard
-        position="President"
-        image="placeholder.png"
-        name="John Doe"
-        email="johndoe@example.com"
-      />
     </div>
   );
 };
