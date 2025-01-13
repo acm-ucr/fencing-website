@@ -20,9 +20,8 @@ const BoardCard: React.FC<BoardCardProps> = ({
       </h3>
       <div className="board-card-image mb-4 flex justify-center">
         <img
-          className="h-40 w-40 rounded-lg border-2 border-gray-500 object-cover"
+          className="h-40 w-40 rounded-lg object-cover"
           src={image || "placeholder.png"}
-          alt={name ? `${name}'s profile` : "Default profile"}
         />
       </div>
       <div className="text-center">
