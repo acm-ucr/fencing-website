@@ -9,7 +9,7 @@ const Navigation = () => {
         {ITEMS.map((item) => (
           <Link
             href={`/${item.page}`}
-            className={`${item.col} ${item.cole} row-start-2 flex justify-center text-2xl text-white`}
+            className={`${item.col} ${item.cole} row-start-2 flex justify-center text-2xl text-white hover:text-[#008BFE] hover:underline`}
           >
             {item.name}
           </Link>
