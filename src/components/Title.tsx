@@ -2,12 +2,16 @@ import React from "react";
 
 const Title = () => {
   return (
-    <div className="flex flex-row justify-center p-5 border-[#008CFF] border-4 bg-blue-800">
-      <h1 className="   text-white">
-        Types of Fencing Swords
+    <div className="flex justify-center items-start h-screen pt-16">
+      <h1 className="text-3xl font-bold text-black">
+        Meet The Board
       </h1>
     </div>
   );
+
+  // Change Text to white once background is added
 };
 
 export default Title;
+
+
