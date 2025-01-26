@@ -5,7 +5,7 @@ const Button = ({ link, text, color = "bg-vex-black" }) => {
   return (
     <Link
       href={link}
-      className={`${color} text-white font-righteous py-2 px-4`}
+      className={`${color} text-white`}
     >
       {text}
     </Link>
