@@ -4,7 +4,7 @@ import Link from "next/link";
 const Button = ({color = "bg-vex-black" }) => {
   return (
     <Link
-      href={link}
+      href={Link}
       className={`${color} text-white`}
     >
       {text}
