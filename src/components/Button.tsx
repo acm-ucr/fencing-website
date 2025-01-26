@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 
-const Button = ({link, text, color = "bg-vex-black" }) => {
+const Button = ({color = "bg-vex-black" }) => {
   return (
     <Link
       href={link}
