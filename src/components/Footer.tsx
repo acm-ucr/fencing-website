@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import betterBackground from "../../public/betterBackground.jpg";
+import betterBackground from "../../public/betterBackground.webp";
 import Instagram from "../../public/Instagram.svg";
 import mail from "../../public/mail.svg";
 import Link from "../../public/Link.svg";
