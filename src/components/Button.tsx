@@ -25,10 +25,7 @@ interface ButtonProps {
 
 const Button = ({ color = "bg-vex-black", link, text }: ButtonProps) => {
   return (
-    <Link
-      href={link as LinkProps["href"]}
-      className={`${color} text-white`}
-    >
+    <Link href={link as LinkProps["href"]} className={`${color} text-white`}>
       {text}
     </Link>
   );
