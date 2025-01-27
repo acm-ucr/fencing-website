@@ -1,17 +1,23 @@
 import React from "react";
+import Image from "next/image";
 
-interface BoardCardProps {
-  position: string;
-  name: string;
-  email: string;
-  image?: string;
-}
+// interface BoardCardProps {
+//   position: string;
+//   name: string;
+//   email: string;
+//   image?: string;
+// }
 
-const BoardCard: React.FC<BoardCardProps> = ({
+const BoardCard = ({
   position,
   name,
   email,
   image,
+}: {
+  position: string;
+  name: string;
+  email: string;
+  image: string;
 }) => {
   return (
     <div className="board-card square-lg bg-gray-800 p-4 text-white shadow-lg">
@@ -19,9 +25,10 @@ const BoardCard: React.FC<BoardCardProps> = ({
         {position}
       </h3>
       <div className="board-card-image mb-4 flex justify-center">
-        <img
+        <Image
           className="h-40 w-40 rounded-lg object-cover"
-          src={image || "placeholder.png"}
+          src={image}
+          alt="Picture of the author"
         />
       </div>
       <div className="text-center">
