@@ -4,8 +4,7 @@ import Scoring from "../components/Scoring";
 const About = () => {
   return (
     <div>
-      {" "}
-      <Scoring></Scoring>
+      <Scoring />
     </div>
   );
 };
