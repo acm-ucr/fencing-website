@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const JoinLanding = () => {
   return (
@@ -10,7 +11,7 @@ const JoinLanding = () => {
         </div>
       </div>
 
-      <div className="h-3/6 w-4/5 rounded-lg bg-[#808080]"></div>
+      <Image className="h-3/6 w-4/5 rounded-lg" src={""} />
     </div>
   );
 };
