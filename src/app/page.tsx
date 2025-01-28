@@ -6,9 +6,9 @@ import Title from "@/components/Title";
 
 const Home = () => {
   return (
-    <div className="flex h-screen w-screen items-center justify-center">
+    <div className="flex h-screen w-screen items-center justify-center bg-[#091422]">
       <Landing />
-      <Title/>
+      <Title />
       <About />
       <What />
       <Join />
