@@ -2,8 +2,8 @@ import React from "react";
 
 const Title = () => {
   return (
-    <div className="flex flex-row justify-center border-4 border-[#008CFF] bg-blue-800 p-5">
-      <h1 className="text-white">Types of Fencing Swords</h1>
+    <div className="flex h-1 w-1/5 flex-row items-center justify-center rounded-xl border-2 border-[#008CFF] bg-[#008CFF33] p-5 font-bold text-white">
+      Types of Fencing Swords
     </div>
   );
 };
