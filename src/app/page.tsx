@@ -2,6 +2,7 @@ import About from "@/components/About";
 import Join from "@/components/Join";
 import Landing from "@/components/Landing";
 import What from "@/components/What";
+import JoinLanding from "@/components/JoinLanding";
 
 const Home = () => {
   return (
@@ -10,6 +11,7 @@ const Home = () => {
       <About />
       <What />
       <Join />
+      <JoinLanding />
     </div>
   );
 };

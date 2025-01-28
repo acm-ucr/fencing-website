@@ -11,7 +11,9 @@ const JoinLanding = () => {
         </div>
       </div>
 
-      <Image className="h-3/6 w-4/5 rounded-lg" src={""} />
+      {/* <Image className="h-1/2 w-4/5 rounded-lg" src={""} alt="Image Alt"/> */}
+      {/* Use Actual Image once it's uploaded */}
+      <div className="h-1/2 w-4/5 rounded-lg border-2 border-blue-500 bg-gray-500"></div>
     </div>
   );
 };
