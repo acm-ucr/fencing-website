@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 
 // interface BoardCardProps {
 //   position: string;
@@ -17,7 +17,7 @@ const BoardCard = ({
   position: string;
   name: string;
   email: string;
-  image: string;
+  image: StaticImageData;
 }) => {
   return (
     <div className="board-card square-lg bg-gray-800 p-4 text-white shadow-lg">
