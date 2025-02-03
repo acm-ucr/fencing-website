@@ -10,7 +10,7 @@ const Button = ({ link, text }: ButtonProps) => {
   return (
     <Link
       href={link}
-      className="ml-[61px] mt-[293px] inline-block h-[43px] w-[308px] rounded-[15px] border-[3px] bg-[#5865F2] text-base font-medium text-white transition-colors hover:bg-[#4752C4]"
+      className="ml-4 mt-4 inline-block h-4 w-4 border-spacing-3 rounded-sm bg-[#008CFF33]/20 text-base font-medium text-white transition-colors hover:bg-[#008CFF]"
     >
       {text}
     </Link>
