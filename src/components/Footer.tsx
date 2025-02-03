@@ -1,9 +1,10 @@
 import React from "react";
 import Image from "next/image";
-import evenBetterBackground from "../../public/evenBetterBackground.png";
+import evenBetterBackground from "../../public/theBestBackground.svg";
 import Instagram from "../../public/Instagram.svg";
 import mail from "../../public/mail.svg";
-import Link from "../../public/Link.svg";
+import imgLink from "../../public/Link.svg";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -22,15 +23,15 @@ const Footer = () => {
       <div className="absolute inset-0 left-28 right-auto top-20 flex flex-col items-center justify-center italic text-white">
         <>University of California, Riverside</>
       </div>
-      <div className="absolute inset-0 left-3/4 flex flex-col justify-center text-white">
-        <a>yourname@email.com</a>
-      </div>
-      <div className="absolute inset-0 left-3/4 top-20 flex flex-col justify-center text-white">
-        <a>discord invite link</a>
-      </div>
-      <div className="absolute inset-0 left-3/4 top-40 flex flex-col justify-center text-white">
-        <a>@instagram_handle</a>
-      </div>
+      <Link href="" className="absolute inset-0 left-3/4 flex flex-col justify-center text-white">
+        yourname@email.com
+      </Link>
+      <Link href={""} className="absolute inset-0 left-3/4 top-20 flex flex-col justify-center text-white">
+        <>discord invite link</>
+      </Link>
+      <Link href={""} className="absolute inset-0 left-3/4 top-40 flex flex-col justify-center text-white">
+        <>@instagram_handle</>
+      </Link>
       <div className="absolute inset-0 left-2/4 right-14 top-40 flex flex-col items-center justify-center">
         <Image src={Instagram} alt="insta logo" className="" />
       </div>
@@ -38,7 +39,7 @@ const Footer = () => {
         <Image src={mail} alt="mail logo" className="" />
       </div>
       <div className="absolute inset-0 left-2/4 right-14 top-20 flex flex-col items-center justify-center">
-        <Image src={Link} alt="link logo" className="" />
+        <Image src={imgLink} alt="link logo" className="" />
       </div>
     </div>
   );
