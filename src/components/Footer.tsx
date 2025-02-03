@@ -23,13 +23,22 @@ const Footer = () => {
       <div className="absolute inset-0 left-28 right-auto top-20 flex flex-col items-center justify-center italic text-white">
         <>University of California, Riverside</>
       </div>
-      <Link href="" className="absolute inset-0 left-3/4 flex flex-col justify-center text-white">
+      <Link
+        href=""
+        className="absolute inset-0 left-3/4 flex flex-col justify-center text-white"
+      >
         yourname@email.com
       </Link>
-      <Link href={""} className="absolute inset-0 left-3/4 top-20 flex flex-col justify-center text-white">
+      <Link
+        href={""}
+        className="absolute inset-0 left-3/4 top-20 flex flex-col justify-center text-white"
+      >
         <>discord invite link</>
       </Link>
-      <Link href={""} className="absolute inset-0 left-3/4 top-40 flex flex-col justify-center text-white">
+      <Link
+        href={""}
+        className="absolute inset-0 left-3/4 top-40 flex flex-col justify-center text-white"
+      >
         <>@instagram_handle</>
       </Link>
       <div className="absolute inset-0 left-2/4 right-14 top-40 flex flex-col items-center justify-center">
