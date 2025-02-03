@@ -7,7 +7,7 @@ const page = () => {
     <div className="flex h-screen w-screen flex-col items-center justify-center">
       <Landing />
       <Title text="Meet The Board" />
-      <BoardCard name = "t" position="TT" email="@" />
+      <BoardCard name="t" position="TT" email="@" />
     </div>
   );
 };
