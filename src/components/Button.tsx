@@ -1,11 +1,16 @@
 import React from "react";
 import Link from "next/link";
 
-const Button = ({ link, text, color = "bg-vex-black" }) => {
+interface ButtonProps {
+  link: string;
+  text: string;
+}
+
+const Button = ({ link, text }: ButtonProps) => {
   return (
     <Link
       href={link}
-      className={`${color} text-white`}
+      className="ml-4 mt-4 inline-block h-4 w-4 rounded-sm border-spacing-3 bg-[#008CFF33]/20 text-base font-medium text-white transition-colors hover:bg-[#008CFF]"
     >
       {text}
     </Link>
