@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import betterBackground from "../../public/betterBackground.jpg";
+import evenBetterBackground from "../../public/evenBetterBackground.png";
 import Instagram from "../../public/Instagram.svg";
 import mail from "../../public/mail.svg";
 import Link from "../../public/Link.svg";
@@ -10,7 +10,7 @@ const Footer = () => {
     <div className="relative">
       <div>
         <Image
-          src={betterBackground}
+          src={evenBetterBackground}
           alt="page background"
           className="w-full"
         />
@@ -23,13 +23,13 @@ const Footer = () => {
         <>University of California, Riverside</>
       </div>
       <div className="absolute inset-0 left-3/4 flex flex-col justify-center text-white">
-        <>yourname@email.com</>
+        <a>yourname@email.com</a>
       </div>
       <div className="absolute inset-0 left-3/4 top-20 flex flex-col justify-center text-white">
-        <>discord invite link</>
+        <a>discord invite link</a>
       </div>
       <div className="absolute inset-0 left-3/4 top-40 flex flex-col justify-center text-white">
-        <>@instagram_handle</>
+        <a>@instagram_handle</a>
       </div>
       <div className="absolute inset-0 left-2/4 right-14 top-40 flex flex-col items-center justify-center">
         <Image src={Instagram} alt="insta logo" className="" />
