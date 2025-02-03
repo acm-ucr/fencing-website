@@ -8,9 +8,10 @@ interface ButtonProps {
 
 const Button = ({ link, text }: ButtonProps) => {
   return (
-    <Link 
-      href={link} 
-      className="inline-block w-[308px] h-[43px] mt-[293px] ml-[61px] rounded-[15px] border-[3px] bg-[#5865F2] hover:bg-[#4752C4] text-white font-medium text-base transition-colors">
+    <Link
+      href={link}
+      className="ml-[61px] mt-[293px] inline-block h-[43px] w-[308px] rounded-[15px] border-[3px] bg-[#5865F2] text-base font-medium text-white transition-colors hover:bg-[#4752C4]"
+    >
       {text}
     </Link>
   );
