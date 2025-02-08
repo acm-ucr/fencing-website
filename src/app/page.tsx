@@ -2,8 +2,6 @@ import About from "@/components/About";
 import Join from "@/components/Join";
 import Landing from "@/components/Landing";
 import What from "@/components/What";
-import Title from "@/components/Title";
-import TypeOfFencingSwords from "@/components/Title";
 
 const Home = () => {
   return (
@@ -12,8 +10,6 @@ const Home = () => {
       <About />
       <What />
       <Join />
-
-      <TypeOfFencingSwords/>
     </div>
   );
 };
