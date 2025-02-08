@@ -3,14 +3,17 @@ import Join from "@/components/Join";
 import Landing from "@/components/Landing";
 import What from "@/components/What";
 import Title from "@/components/Title";
+import TypeOfFencingSwords from "@/components/Title";
 
 const Home = () => {
   return (
-    <div className="flex h-screen w-screen flex-col items-center justify-center">
+    <div className="flex h-screen w-screen flex-col items-center justify-center bg-fencing-overall-background">
       <Landing />
       <About />
       <What />
       <Join />
+
+      <TypeOfFencingSwords/>
     </div>
   );
 };
