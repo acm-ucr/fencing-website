@@ -1,5 +1,5 @@
 import React from "react";
-import Scoring from "../components/Scoring";
+import Scoring from "./Scoring";
 
 const About = () => {
   return (
