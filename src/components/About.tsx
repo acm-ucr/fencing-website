@@ -1,7 +1,12 @@
 import React from "react";
+import Scoring from "../components/Scoring";
 
 const About = () => {
-  return <div>About</div>;
+  return (
+    <div>
+      <Scoring />
+    </div>
+  );
 };
 
 export default About;
