@@ -10,7 +10,7 @@ const Landing = () => {
         University of California, Riverside
       </div>
       <button className="text-3lg my-4 text-wrap rounded-3xl border-2 border-fencing-border-blue bg-fencing-overall-background px-8 py-1 text-center font-bold text-white/70">
-        Join Now!
+        Join Now wejhksdfjksdfjskfjnsdk!
       </button>
     </div>
   );
