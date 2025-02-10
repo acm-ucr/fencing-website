@@ -5,10 +5,10 @@ import { ITEMS } from "@/data/board";
 
 const Page = () => {
   return (
-    <div className="flex h-screen w-screen flex-col items-center justify-center mt-28" >
+    <div className="mt-28 flex h-screen w-screen flex-col items-center justify-center">
       <Landing />
       <Title text="Meet The Board" />
-      
+
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
         {ITEMS.map((item, index) => (
           <BoardCard
