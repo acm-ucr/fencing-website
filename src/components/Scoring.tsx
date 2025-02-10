@@ -2,10 +2,12 @@ import React from "react";
 import { ScoringComponent } from "../data/ScoringComponent";
 import Score from "../../public/score.svg";
 import Image from "next/image";
+import Button from "./Button";
 
 const Scoring = () => {
   return (
     <div className="bg-[#091422] px-16">
+      <Button link="" text="fjdska" />
       <div className="flex flex-row items-center justify-center gap-16 text-white">
         <div className="flex items-center">
           <div className="pb-6 pl-10">
