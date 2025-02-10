@@ -2,7 +2,6 @@ import React from "react";
 import { ScoringComponent } from "../data/ScoringComponent";
 import Score from "../../public/score.svg";
 import Image from "next/image";
-import Button from "./Button";
 
 const Scoring = () => {
   return (
