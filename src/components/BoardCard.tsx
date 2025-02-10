@@ -25,13 +25,15 @@ const BoardCard = ({
         {position}
       </h3>
       <div className="board-card-image mb-4 flex justify-center">
-        {<Image
-          className="h-40 w-40 rounded-lg object-cover"
-          src={image}
-          alt="Picture of the author"
-          width={100}
-          height={100}
-        />}
+        {
+          <Image
+            className="h-40 w-40 rounded-lg object-cover"
+            src={image}
+            alt="Picture of the author"
+            width={100}
+            height={100}
+          />
+        }
       </div>
       <div className="text-center">
         <p className="board-card-name text-lg font-semibold">
