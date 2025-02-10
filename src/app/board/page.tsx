@@ -10,7 +10,7 @@ const Page = () => {
       <Title text="Meet The Board" />
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {ITEMS.map((item, index) => (
-          <BoardCard key={index} name={item.name} position={item.position} email={item.email} />
+          <BoardCard key={index} name={item.name} position={item.position} email={item.email} image={item.image} />
         ))}
       </div>
     </div>
