@@ -1,10 +1,10 @@
 import React from "react";
-import Button from "./Button";
+import Scoring from "./Scoring";
 
 const About = () => {
   return (
     <div>
-      <Button link="/" text="Test" />
+      <Scoring />
     </div>
   );
 };

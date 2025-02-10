@@ -7,7 +7,6 @@ import Button from "./Button";
 const Scoring = () => {
   return (
     <div className="bg-[#091422] px-16">
-      <Button link="" text="fjdska" />
       <div className="flex flex-row items-center justify-center gap-16 text-white">
         <div className="flex items-center">
           <div className="pb-6 pl-10">
