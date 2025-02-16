@@ -5,7 +5,7 @@ import link from "@/public/Link.svg";
 const What = () => {
   return (
     <div>
-      <div className="flex h-screen w-full items-end gap-[7.5%] p-[5%]">
+      <div className="mb-12 flex h-screen w-full items-end gap-[7.5%] p-[5%]">
         <Image
           alt="alttext"
           src={link}
