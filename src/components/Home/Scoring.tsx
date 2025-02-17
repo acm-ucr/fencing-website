@@ -16,7 +16,7 @@ const Scoring = () => {
         <div className="items-left flex flex-col justify-center">
           <div className="justify-right flex h-20 w-full items-center rounded-lg border-4 border-[#008CFF] bg-[#008CFF33]">
             <p className="items-left flex px-8 text-2xl font-bold text-white">
-              Format & Scoring ROUND ROUND ROUND ROUND ROUND
+              Format & Scoring
             </p>
           </div>
 
