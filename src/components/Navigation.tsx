@@ -19,8 +19,8 @@ const Navigation = () => {
         </NavigationMenuItem>
 
         <div className="flex gap-4">
-          {items.map(({ link, name }) => (
-            <NavigationMenuItem>
+          {items.map(({ link, name }, index) => (
+            <NavigationMenuItem key={index}>
               <Link
                 href={link}
                 className={
