@@ -1,6 +1,6 @@
 import React from "react";
 import { ScoringComponent } from "../../data/ScoringComponent";
-import Score from "../../public/score.svg";
+import Score from "@/public/score.svg";
 import Image from "next/image";
 
 const Scoring = () => {
