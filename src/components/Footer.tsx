@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import footer from "@/public/footer.png";
+import footer from "@/public/footer.webp";
 import Link from "next/link";
 import {
   SiInstagram,
