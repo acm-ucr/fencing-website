@@ -1,21 +1,39 @@
-import React from "react";
+"use client";
 import Link from "next/link";
-import { ITEMS } from "@/data/navigation";
+import { items } from "@/data/navigation";
+import {
+  NavigationMenu,
+  NavigationMenuItem,
+  NavigationMenuList,
+} from "@/components/ui/navigation-menu";
+import { usePathname } from "next/navigation";
 
 const Navigation = () => {
+  const pathname = usePathname();
+
   return (
-    <>
-      <div className="grid grid-cols-10 grid-rows-2 font-bold">
-        {ITEMS.map((item) => (
-          <Link
-            href={`/${item.page}`}
-            className={`${item.col} ${item.cole} row-start-2 flex justify-center text-2xl text-white active:text-[#008BFE] active:underline`}
-          >
-            {item.name}
-          </Link>
-        ))}
-      </div>
-    </>
+    <NavigationMenu>
+      <NavigationMenuList className="w-screen justify-between p-4">
+        <NavigationMenuItem>
+          <Link href="/">Fencing @ UCR</Link>
+        </NavigationMenuItem>
+
+        <div className="flex gap-4">
+          {items.map(({ link, name }) => (
+            <NavigationMenuItem>
+              <Link
+                href={link}
+                className={
+                  pathname === link ? "text-fencing-border-blue underline" : ""
+                }
+              >
+                {name}
+              </Link>
+            </NavigationMenuItem>
+          ))}
+        </div>
+      </NavigationMenuList>
+    </NavigationMenu>
   );
 };
 

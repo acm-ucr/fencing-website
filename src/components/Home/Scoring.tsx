@@ -1,7 +1,7 @@
 import React from "react";
-import { ScoringComponent } from "../data/ScoringComponent";
-import Score from "../../public/score.svg";
+import Score from "@/public/score.svg";
 import Image from "next/image";
+import { ScoringComponent } from "@/data/ScoringComponent";
 
 const Scoring = () => {
   return (
@@ -14,9 +14,9 @@ const Scoring = () => {
         </div>
 
         <div className="items-left flex flex-col justify-center">
-          <div className="justify-right flex h-20 w-full items-center rounded-2xl border-4 border-[#008CFF] bg-[#008CFF33]">
-            <p className="items-left flex px-8 text-3xl font-bold text-white">
-              Format & Scoring
+          <div className="justify-right flex h-20 w-full items-center rounded-lg border-4 border-[#008CFF] bg-[#008CFF33]">
+            <p className="items-left flex px-8 text-2xl font-bold text-white">
+              Format & Scoring ROUND ROUND ROUND ROUND ROUND
             </p>
           </div>
 

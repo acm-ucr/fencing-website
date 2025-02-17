@@ -1,5 +1,5 @@
-import About from "@/components/About";
-import Join from "@/components/Join";
+import About from "@/components/Home/Scoring";
+import Join from "@/components/Join/Join";
 
 const Home = () => {
   return (

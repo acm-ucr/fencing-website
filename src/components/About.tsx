@@ -1,5 +1,5 @@
 import React from "react";
-import Scoring from "./Scoring";
+import Scoring from "@/components/Home/Scoring";
 import What from "@/components/What";
 import Types from "@/components/Types";
 
