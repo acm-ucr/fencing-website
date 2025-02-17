@@ -1,55 +1,48 @@
 import React from "react";
 import Image from "next/image";
-import evenBetterBackground from "../../public/theBestBackground.svg";
-import Instagram from "../../public/Instagram.svg";
-import mail from "../../public/mail.svg";
-import imgLink from "../../public/Link.svg";
+import footer from "@/public/footer.png";
 import Link from "next/link";
+import {
+  SiInstagram,
+  SiGmail,
+  SiDiscord,
+} from "@icons-pack/react-simple-icons";
 
 const Footer = () => {
   return (
-    <div className="relative">
-      <div>
-        <Image
-          src={evenBetterBackground}
-          alt="page background"
-          className="w-full"
-        />
-        <div className="-z-5 absolute left-0 top-0 h-full w-full bg-blue-950 opacity-50" />
-      </div>
-      <div className="absolute inset-0 left-28 right-auto flex flex-col items-center justify-center space-y-4 text-4xl font-bold text-white">
-        <>Fencing Club</>
-      </div>
-      <div className="absolute inset-0 left-28 right-auto top-20 flex flex-col items-center justify-center italic text-white">
-        <>University of California, Riverside</>
-      </div>
-      <Link
-        href=""
-        className="absolute inset-0 left-3/4 flex flex-col justify-center text-white"
-      >
-        yourname@email.com
-      </Link>
-      <Link
-        href={""}
-        className="absolute inset-0 left-3/4 top-20 flex flex-col justify-center text-white"
-      >
-        <>discord invite link</>
-      </Link>
-      <Link
-        href={""}
-        className="absolute inset-0 left-3/4 top-40 flex flex-col justify-center text-white"
-      >
-        <>@instagram_handle</>
-      </Link>
-      <div className="absolute inset-0 left-2/4 right-14 top-40 flex flex-col items-center justify-center">
-        <Image src={Instagram} alt="insta logo" className="" />
-      </div>
-      <div className="absolute inset-0 left-2/4 right-14 flex flex-col items-center justify-center">
-        <Image src={mail} alt="mail logo" className="" />
-      </div>
-      <div className="absolute inset-0 left-2/4 right-14 top-20 flex flex-col items-center justify-center">
-        <Image src={imgLink} alt="link logo" className="" />
-      </div>
+    <div className="relative flex h-80 items-center justify-center">
+      {/* TODO: CROP PHOTO FOR EASIER HANDLING AND BETTER RESOLUTION */}
+      <Image
+        src={footer}
+        alt="Footer Image"
+        className="absolute left-0 top-0 -z-10 h-full w-screen object-cover"
+      />
+
+      <div className="absolute left-0 top-0 w-full bg-blue-950 opacity-50" />
+
+      <section className="z-20 flex h-full w-10/12 items-center justify-between">
+        <div>
+          <p className="flex flex-col items-center justify-center space-y-4 text-4xl font-bold text-white">
+            Fencing Club
+          </p>
+          <p className="left-28 right-auto top-20 flex flex-col items-center justify-center italic text-white">
+            University of California, Riverside
+          </p>
+        </div>
+
+        <div className="flex flex-col gap-4">
+          <Link href="" className="flex items-center gap-2 text-white">
+            <SiGmail /> yourname@email.com
+          </Link>
+          <Link href="" className="flex items-center gap-2 text-white">
+            <SiDiscord />
+            discord invite link
+          </Link>
+          <Link href="" className="flex items-center gap-2 text-white">
+            <SiInstagram /> @instagram_handle
+          </Link>
+        </div>
+      </section>
     </div>
   );
 };
