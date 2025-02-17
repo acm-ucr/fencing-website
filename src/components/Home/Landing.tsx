@@ -1,5 +1,3 @@
-import React from "react";
-
 const Landing = () => {
   return (
     <div className="flex w-full flex-col items-center justify-center bg-fencing-overall-background p-10">

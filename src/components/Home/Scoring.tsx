@@ -1,4 +1,3 @@
-import React from "react";
 import Score from "@/public/score.svg";
 import Image from "next/image";
 import { ScoringComponent } from "@/data/ScoringComponent";

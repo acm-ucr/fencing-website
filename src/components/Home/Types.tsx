@@ -1,4 +1,3 @@
-import React from "react";
 import Image from "next/image";
 import epee from "@/public/epee.svg";
 import foil from "@/public/foil.svg";
