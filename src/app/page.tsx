@@ -1,6 +1,6 @@
-import About from "@/components/About";
-import Join from "@/components/Join";
-import Landing from "@/components/Landing";
+import About from "@/components/Home/Scoring";
+import Join from "@/components/Join/Join";
+import Landing from "@/components/Home/Landing";
 import What from "@/components/What";
 
 const Home = () => {
