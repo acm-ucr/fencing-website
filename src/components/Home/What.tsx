@@ -1,6 +1,4 @@
 import React from "react";
-import Image from "next/image";
-import placeholder from "@/public/score.svg";
 
 const What = () => {
   return (
