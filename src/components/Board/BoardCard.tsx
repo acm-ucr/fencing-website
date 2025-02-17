@@ -1,46 +1,28 @@
 import React from "react";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 
-// interface BoardCardProps {
-//   position: string;
-//   name: string;
-//   email: string;
-//   image?: string;
-// }
-
-const BoardCard = ({
-  position,
-  name,
-  email,
-  image,
-}: {
+interface props {
   position: string;
   name: string;
   email: string;
-  image: string;
-}) => {
+  image: StaticImageData;
+}
+
+const BoardCard = ({ position, name, email, image }: props) => {
   return (
-    <div className="board-card square-lg bg-gray-800 p-4 text-white shadow-lg">
-      <h3 className="board-card-title mb-2 text-center text-xl font-bold text-blue-500">
+    <div className="text-center text-white shadow-lg">
+      <p className="mb-2 text-center text-xl font-bold text-blue-500">
         {position}
-      </h3>
-      <div className="board-card-image mb-4 flex justify-center">
-        {
-          <Image
-            className="h-40 w-40 rounded-lg object-cover"
-            src={image}
-            alt="Picture of the author"
-            width={100}
-            height={100}
-          />
-        }
+      </p>
+      <div className="mb-4 flex justify-center">
+        <Image
+          className="aspect-square rounded-lg object-cover"
+          src={image}
+          alt={`${name} Picture`}
+        />
       </div>
-      <div className="text-center">
-        <p className="board-card-name text-lg font-semibold">
-          {name || "Unknown Member"}
-        </p>
-        <p className="board-card-email">{email || "No email provided"}</p>
-      </div>
+      <p className="text-lg font-semibold">{name}</p>
+      <p>{email}</p>
     </div>
   );
 };
