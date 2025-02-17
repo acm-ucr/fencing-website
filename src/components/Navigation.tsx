@@ -24,8 +24,7 @@ const Navigation = () => {
               <Link
                 href={link}
                 className={
-                  (pathname === link &&
-                    "text-fencing-border-blue underline") as string
+                  pathname === link ? "text-fencing-border-blue underline" : ""
                 }
               >
                 {name}
