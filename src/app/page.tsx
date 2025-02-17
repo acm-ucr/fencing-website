@@ -1,4 +1,4 @@
-import About from "@/components/Home/Scoring";
+import About from "@/components/Home/About";
 import Join from "@/components/Join/Join";
 
 const Home = () => {

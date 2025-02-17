@@ -1,7 +1,7 @@
 import React from "react";
 import Scoring from "@/components/Home/Scoring";
-import What from "@/components/What";
-import Types from "@/components/Types";
+import What from "@/components/Home/What";
+import Types from "@/components/Home/Types";
 
 const About = () => {
   return (
