@@ -19,11 +19,13 @@ export default function RootLayout({ children }: LayoutProps) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <ReactQueryClientProvider>
-          <Navigation />
-          {children}
-        </ReactQueryClientProvider>
-        <Footer />
+        <div className="w-full bg-[url('../../public/footer.webp')] bg-contain bg-no-repeat">
+          <ReactQueryClientProvider>
+            <Navigation />
+            {children}
+          </ReactQueryClientProvider>
+          <Footer />
+        </div>
       </body>
     </html>
   );
