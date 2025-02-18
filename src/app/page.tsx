@@ -3,7 +3,7 @@ import Join from "@/components/Join/Join";
 
 const Home = () => {
   return (
-    <div className="flex w-full flex-col items-center justify-center bg-fencing-overall-background">
+    <div className="flex w-full flex-col items-center justify-center">
       <About />
       <Join />
     </div>
