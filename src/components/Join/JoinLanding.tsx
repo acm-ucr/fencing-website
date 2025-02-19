@@ -1,6 +1,3 @@
-import React from "react";
-// import Image from "next/image";
-
 const JoinLanding = () => {
   return (
     <div className="flex h-4/6 flex-col items-center justify-center bg-black p-10">
@@ -11,8 +8,6 @@ const JoinLanding = () => {
         </div>
       </div>
 
-      {/* <Image className="h-1/2 w-4/5 rounded-lg" src={""} alt="Image Alt"/> */}
-      {/* Use Actual Image once it's uploaded */}
       <div className="h-1/2 w-4/5 rounded-lg border-2 border-blue-500 bg-gray-500"></div>
     </div>
   );
