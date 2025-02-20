@@ -1,3 +1,5 @@
-const Photos = () => {};
+const Photos = () => {
+  
+};
 
 export default Photos;
