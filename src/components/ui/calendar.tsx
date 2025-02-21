@@ -44,7 +44,7 @@ const Day = ({ date, displayMonth, events, setCurrent }: DayProps) => {
 
   return (
     <div
-      className={`${currentMonth ? "text-white" : "text-gray-400"} h-24 border overflow-y-scroll scrollbar-hidden`}
+      className={`${currentMonth ? "text-white" : "text-gray-400"} scrollbar-hidden h-24 overflow-y-scroll border`}
     >
       <p className="sticky px-2 text-right">{date.getDate()}</p>
 
@@ -58,13 +58,15 @@ const Day = ({ date, displayMonth, events, setCurrent }: DayProps) => {
         ) {
           return (
             <div
-              className="my-1 text-ellipsis bg-fencing-border-blue p-1 text-white text-center"
+              className="my-1 text-ellipsis bg-fencing-border-blue p-1 text-center text-white"
               key={index}
               onClick={() =>
                 setCurrent({ title, start, end, location, description })
               }
             >
-              {startDate.getHours() < 12 ? startDate.getHours() % 12 + "am" : startDate.getHours() % 12 + "pm"} {" "}
+              {startDate.getHours() < 12
+                ? (startDate.getHours() % 12) + "am"
+                : (startDate.getHours() % 12) + "pm"}{" "}
               {title}
             </div>
           );
@@ -85,7 +87,10 @@ function Calendar({
   return (
     <DayPicker
       showOutsideDays={showOutsideDays}
-      className={cn("p-3 bg-fencing-overall-background border-none rounded-none", className)}
+      className={cn(
+        "rounded-none border-none bg-fencing-overall-background p-3",
+        className,
+      )}
       classNames={{
         months: "flex flex-col sm:flex-row space-y-4 sm:space-x-4 sm:space-y-0",
         month: "space-y-4 w-2/3 flex justify-center flex-col mx-auto",
@@ -112,17 +117,22 @@ function Calendar({
         day_outside:
           "day-outside text-muted-foreground aria-selected:bg-accent/50 aria-selected:text-muted-foreground",
         day_disabled: "text-white opacity-50",
-        day_range_middle:
-          "aria-selected:bg-accent aria-selected:text-white",
+        day_range_middle: "aria-selected:bg-accent aria-selected:text-white",
         day_hidden: "invisible",
         ...classNames,
       }}
       components={{
         IconLeft: ({ className, ...props }) => (
-          <MoveLeft className={cn("h-5 w-5 text-white", className)} {...props} />
+          <MoveLeft
+            className={cn("h-5 w-5 text-white", className)}
+            {...props}
+          />
         ),
         IconRight: ({ className, ...props }) => (
-          <MoveRight className={cn("h-5 w-5 text-white", className)} {...props} />
+          <MoveRight
+            className={cn("h-5 w-5 text-white", className)}
+            {...props}
+          />
         ),
         Day: ({ displayMonth, date }) => (
           <Day
