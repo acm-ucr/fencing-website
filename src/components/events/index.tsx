@@ -78,12 +78,13 @@ const Events = () => {
               <DialogDescription>{current.description}</DialogDescription>
             </DialogHeader>
           </DialogContent>
+          x
         </Dialog>
       }
       <Calendar
         mode="single"
         selected={new Date()}
-        className="w-full rounded-md border"
+        className="w-full"
         events={data}
         setCurrent={setCurrent}
       />
