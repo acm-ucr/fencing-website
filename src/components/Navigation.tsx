@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import Link from "next/link";
 import { useState } from "react";
@@ -8,7 +8,7 @@ const Navbar = () => {
   const [active, setActive] = useState("About");
 
   return (
-    <nav className="flex items-center justify-between p-4 my-5 mx-40 text-white">
+    <div className="absolute left-0 top-0 z-50 my-5 flex w-full items-center justify-between bg-transparent p-4 px-40 text-white">
       <div className="text-2xl font-semibold">Fencing Club</div>
       <div className="flex space-x-16 text-lg">
         {items.map(({ name, link }) => (
@@ -26,7 +26,7 @@ const Navbar = () => {
           </Link>
         ))}
       </div>
-    </nav>
+    </div>
   );
 };
 
