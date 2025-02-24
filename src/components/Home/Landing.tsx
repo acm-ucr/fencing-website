@@ -18,9 +18,9 @@ const Landing = () => {
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-fencing-overall-background"></div>
       </div>
       <div className="relative z-10 text-center">
-        <h1 className="px-10 py-2 pb-4 text-5xl font-bold text-white">
+        <div className="px-10 py-2 pb-4 text-5xl font-bold text-white">
           Fencing Club
-        </h1>
+        </div>
         <p className="px-10 pb-5 text-2xl italic text-white/85">
           University of California, Riverside
         </p>
