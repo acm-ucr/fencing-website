@@ -78,7 +78,6 @@ const Events = () => {
               <DialogDescription>{current.description}</DialogDescription>
             </DialogHeader>
           </DialogContent>
-          x
         </Dialog>
       }
       <Calendar
