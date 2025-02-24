@@ -18,7 +18,7 @@ type LayoutProps = {
 export default function RootLayout({ children }: LayoutProps) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${inter.className} bg-fencing-overall-background`}>
         <ReactQueryClientProvider>
           <Navigation />
           {children}
