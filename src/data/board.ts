@@ -1,4 +1,4 @@
-import Sample from "@/public/board/sample.jpeg";
+import Sample from "@/public/board/sample.webp";
 
 export const ITEMS = [
   {
