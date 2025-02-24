@@ -1,5 +1,5 @@
 import Image from "next/image";
-import footer from "../../public/footer.svg";
+import footer from "@public/footer.svg";
 import Link from "next/link";
 import {
   SiInstagram,
