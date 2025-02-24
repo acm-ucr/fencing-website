@@ -1,13 +1,3 @@
-import Button from "@/components/Button";
+import JoinLanding from "@/components/Join";
 
-const Join = () => {
-  return (
-    <div className="flex flex-col">
-      Join us
-      <Button link="http://localhost:3000/" text="Membership Form"></Button>
-      <Button link="http://localhost:3000/" text="Discord Server"></Button>
-    </div>
-  );
-};
-
-export default Join;
+export default JoinLanding;
