@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import background from "@/public/background.webp";
+import Button from "../Button";
 
 const Landing = () => {
   return (
@@ -23,9 +24,7 @@ const Landing = () => {
         <p className="px-10 pb-5 text-2xl italic text-white/85">
           University of California, Riverside
         </p>
-        <button className="my-4 rounded-3xl border-2 border-blue-500 bg-transparent px-8 py-1 text-2xl font-bold text-white/70 transition hover:bg-blue-500 hover:text-white">
-          Join Now!
-        </button>
+        <Button link="/join" text="Join Now!" />
       </div>
     </div>
   );
