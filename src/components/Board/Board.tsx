@@ -31,7 +31,7 @@ function Board() {
             key={index}
             name={item.name}
             position={item.position}
-            email={item.email}
+            // email={item.email}
             image={item.image}
           />
         ))}
