@@ -1,7 +1,7 @@
 const What = () => {
   return (
     <div>
-      <div className="mb-12 flex h-screen w-full items-end gap-[7.5%] p-[5%]">
+      <div className="mb-12 flex h-screen w-full items-end gap-[7.5%] p-36">
         {/* <Image
           alt="alttext"
           src={link}
