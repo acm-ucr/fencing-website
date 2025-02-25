@@ -83,7 +83,7 @@ const Events = () => {
       <Calendar
         mode="single"
         selected={new Date()}
-        className="w-full rounded-md border"
+        className="w-full"
         events={data}
         setCurrent={setCurrent}
       />
