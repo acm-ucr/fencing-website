@@ -5,7 +5,7 @@ import Types from "@/components/Home/Types";
 
 const About = () => {
   return (
-    <div className="">
+    <div className="flex w-full flex-col items-center justify-center bg-fencing-overall-background">
       <Landing />
       <What />
       <Types />
