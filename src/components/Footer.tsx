@@ -1,5 +1,5 @@
 import Image from "next/image";
-import footer from "@/public/background.webp";
+import footer from "@/public/footer.svg";
 import Link from "next/link";
 import {
   SiInstagram,
@@ -9,17 +9,14 @@ import {
 
 const Footer = () => {
   return (
-    <div className="relative flex h-80 items-center justify-center">
-      <div>
-        <Image
-          src={footer}
-          alt="Footer Image"
-          className="absolute left-0 top-0 -z-10 h-full w-screen object-cover opacity-20"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-transparent to-fencing-overall-background"></div>
-      </div>
+    <div className="relative flex h-40 items-center justify-center">
+      <Image
+        src={footer}
+        alt="Footer Image"
+        className="absolute left-0 top-0 -z-10 h-full w-screen object-cover"
+      />
 
-      <div className="absolute left-0 top-0 w-full bg-blue-950 opacity-50" />
+      <div className="absolute left-0 top-0 h-full w-full bg-blue-950 opacity-50" />
 
       <section className="z-20 flex h-full w-10/12 items-center justify-between">
         <div>

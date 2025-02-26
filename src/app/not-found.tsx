@@ -12,7 +12,7 @@ const NotFound = () => {
         />
 
         <div className="ml-auto mr-60 text-center font-medium text-white">
-          <h1 className="text-9xl">404 Error</h1>
+          <p className="text-9xl">404 Error</p>
           <p className="mt-10 w-[600px] text-3xl">
             Oops! Sorry, we couldn’t find the page you were looking for!
           </p>
