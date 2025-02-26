@@ -33,49 +33,49 @@ import Gallery32 from "@/public/gallery/gallery_32.jpg";
 import Gallery33 from "@/public/gallery/gallery_33.jpg";
 import Gallery34 from "@/public/gallery/gallery_34.jpg";
 import Gallery35 from "@/public/gallery/gallery_35.jpg";
+import { StaticImageData } from "next/image";
 
 type GalleryItem = {
-  src: string;
+  image: StaticImageData;
   title: string;
-  blurDataURL?: string;
 };
 
 const galleryItems: GalleryItem[] = [
-  { src: Gallery1.src, title: "Image 1", blurDataURL: Gallery1.blurDataURL },
-  { src: Gallery2.src, title: "Image 2", blurDataURL: Gallery2.blurDataURL },
-  { src: Gallery3.src, title: "Image 3", blurDataURL: Gallery3.blurDataURL },
-  { src: Gallery4.src, title: "Image 4", blurDataURL: Gallery4.blurDataURL },
-  { src: Gallery5.src, title: "Image 5", blurDataURL: Gallery5.blurDataURL },
-  { src: Gallery6.src, title: "Image 6", blurDataURL: Gallery6.blurDataURL },
-  { src: Gallery7.src, title: "Image 7", blurDataURL: Gallery7.blurDataURL },
-  { src: Gallery8.src, title: "Image 8", blurDataURL: Gallery8.blurDataURL },
-  { src: Gallery9.src, title: "Image 9", blurDataURL: Gallery9.blurDataURL },
-  { src: Gallery10.src, title: "Image 10", blurDataURL: Gallery10.blurDataURL },
-  { src: Gallery11.src, title: "Image 11", blurDataURL: Gallery11.blurDataURL },
-  { src: Gallery12.src, title: "Image 12", blurDataURL: Gallery12.blurDataURL },
-  { src: Gallery13.src, title: "Image 13", blurDataURL: Gallery13.blurDataURL },
-  { src: Gallery14.src, title: "Image 14", blurDataURL: Gallery14.blurDataURL },
-  { src: Gallery15.src, title: "Image 15", blurDataURL: Gallery15.blurDataURL },
-  { src: Gallery16.src, title: "Image 16", blurDataURL: Gallery16.blurDataURL },
-  { src: Gallery17.src, title: "Image 17", blurDataURL: Gallery17.blurDataURL },
-  { src: Gallery18.src, title: "Image 18", blurDataURL: Gallery18.blurDataURL },
-  { src: Gallery19.src, title: "Image 19", blurDataURL: Gallery19.blurDataURL },
-  { src: Gallery20.src, title: "Image 20", blurDataURL: Gallery20.blurDataURL },
-  { src: Gallery21.src, title: "Image 21", blurDataURL: Gallery21.blurDataURL },
-  { src: Gallery22.src, title: "Image 22", blurDataURL: Gallery22.blurDataURL },
-  { src: Gallery23.src, title: "Image 23", blurDataURL: Gallery23.blurDataURL },
-  { src: Gallery24.src, title: "Image 24", blurDataURL: Gallery24.blurDataURL },
-  { src: Gallery25.src, title: "Image 25", blurDataURL: Gallery25.blurDataURL },
-  { src: Gallery26.src, title: "Image 26", blurDataURL: Gallery26.blurDataURL },
-  { src: Gallery27.src, title: "Image 27", blurDataURL: Gallery27.blurDataURL },
-  { src: Gallery28.src, title: "Image 28", blurDataURL: Gallery28.blurDataURL },
-  { src: Gallery29.src, title: "Image 29", blurDataURL: Gallery29.blurDataURL },
-  { src: Gallery30.src, title: "Image 30", blurDataURL: Gallery30.blurDataURL },
-  { src: Gallery31.src, title: "Image 31", blurDataURL: Gallery31.blurDataURL },
-  { src: Gallery32.src, title: "Image 32", blurDataURL: Gallery32.blurDataURL },
-  { src: Gallery33.src, title: "Image 33", blurDataURL: Gallery33.blurDataURL },
-  { src: Gallery34.src, title: "Image 34", blurDataURL: Gallery34.blurDataURL },
-  { src: Gallery35.src, title: "Image 35", blurDataURL: Gallery35.blurDataURL },
+  { image: Gallery1, title: "Image 1" },
+  { image: Gallery2, title: "Image 2" },
+  { image: Gallery3, title: "Image 3" },
+  { image: Gallery4, title: "Image 4" },
+  { image: Gallery5, title: "Image 5" },
+  { image: Gallery6, title: "Image 6" },
+  { image: Gallery7, title: "Image 7" },
+  { image: Gallery8, title: "Image 8" },
+  { image: Gallery9, title: "Image 9" },
+  { image: Gallery10, title: "Image 10" },
+  { image: Gallery11, title: "Image 11" },
+  { image: Gallery12, title: "Image 12" },
+  { image: Gallery13, title: "Image 13" },
+  { image: Gallery14, title: "Image 14" },
+  { image: Gallery15, title: "Image 15" },
+  { image: Gallery16, title: "Image 16" },
+  { image: Gallery17, title: "Image 17" },
+  { image: Gallery18, title: "Image 18" },
+  { image: Gallery19, title: "Image 19" },
+  { image: Gallery20, title: "Image 20" },
+  { image: Gallery21, title: "Image 21" },
+  { image: Gallery22, title: "Image 22" },
+  { image: Gallery23, title: "Image 23" },
+  { image: Gallery24, title: "Image 24" },
+  { image: Gallery25, title: "Image 25" },
+  { image: Gallery26, title: "Image 26" },
+  { image: Gallery27, title: "Image 27" },
+  { image: Gallery28, title: "Image 28" },
+  { image: Gallery29, title: "Image 29" },
+  { image: Gallery30, title: "Image 30" },
+  { image: Gallery31, title: "Image 31" },
+  { image: Gallery32, title: "Image 32" },
+  { image: Gallery33, title: "Image 33" },
+  { image: Gallery34, title: "Image 34" },
+  { image: Gallery35, title: "Image 35" },
 ];
 
 export { galleryItems };
