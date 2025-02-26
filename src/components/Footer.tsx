@@ -10,7 +10,6 @@ import {
 const Footer = () => {
   return (
     <div className="relative flex h-40 items-center justify-center">
-      {/* TODO: CROP PHOTO FOR EASIER HANDLING AND BETTER RESOLUTION */}
       <Image
         src={footer}
         alt="Footer Image"
