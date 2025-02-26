@@ -1,11 +1,11 @@
 import Link from "next/link";
 
-interface ButtonProps {
+interface props {
   link: string;
   text: string;
 }
 
-const Button = ({ link, text }: ButtonProps) => {
+const Button = ({ link, text }: props) => {
   return (
     <Link
       href={link}

@@ -14,6 +14,7 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
+import Gallery from "./gallery";
 
 const Events = () => {
   const [current, setCurrent] = useState<EventProps>({});
@@ -80,6 +81,7 @@ const Events = () => {
           </DialogContent>
         </Dialog>
       }
+      <Gallery />
       <Calendar
         mode="single"
         selected={new Date()}
