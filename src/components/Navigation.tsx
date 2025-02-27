@@ -1,40 +1,32 @@
 "use client";
+
 import Link from "next/link";
 import { items } from "@/data/navigation";
-import {
-  NavigationMenu,
-  NavigationMenuItem,
-  NavigationMenuList,
-} from "@/components/ui/navigation-menu";
 import { usePathname } from "next/navigation";
 
-const Navigation = () => {
+const Navbar = () => {
   const pathname = usePathname();
 
   return (
-    <NavigationMenu>
-      <NavigationMenuList className="w-screen justify-between p-4">
-        <NavigationMenuItem>
-          <Link href="/">Fencing @ UCR</Link>
-        </NavigationMenuItem>
-
-        <div className="flex gap-4">
-          {items.map(({ link, name }, index) => (
-            <NavigationMenuItem key={index}>
-              <Link
-                href={link}
-                className={
-                  pathname === link ? "text-fencing-border-blue underline" : ""
-                }
-              >
-                {name}
-              </Link>
-            </NavigationMenuItem>
-          ))}
-        </div>
-      </NavigationMenuList>
-    </NavigationMenu>
+    <div className="relative my-5 flex w-full items-center justify-between bg-transparent p-4 px-40 text-white">
+      <div className="text-2xl font-semibold">Fencing Club</div>
+      <div className="flex space-x-16 text-lg">
+        {items.map(({ name, link }) => (
+          <Link
+            key={name}
+            href={link}
+            className={`cursor-pointer ${
+              pathname === link
+                ? "font-semibold text-blue-500 underline"
+                : "text-white hover:text-gray-400"
+            }`}
+          >
+            {name}
+          </Link>
+        ))}
+      </div>
+    </div>
   );
 };
 
-export default Navigation;
+export default Navbar;

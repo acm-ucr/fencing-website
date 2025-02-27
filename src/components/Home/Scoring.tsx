@@ -4,7 +4,7 @@ import { ScoringComponent } from "@/data/ScoringComponent";
 
 const Scoring = () => {
   return (
-    <div className="bg-[#091422] px-16">
+    <div className="bg-[#091422] p-36">
       <div className="flex justify-center gap-16 text-white">
         <div className="flex items-center justify-center">
           <div className="w-80">
@@ -30,9 +30,9 @@ const Scoring = () => {
       <div className="flex w-full flex-row justify-center gap-16 pt-16 text-white">
         {ScoringComponent.map((item, index) => (
           <div key={index} className="flex flex-col">
-            <h2 className="pb-4 text-3xl font-bold underline underline-offset-8">
+            <p className="pb-4 text-3xl font-bold underline underline-offset-8">
               {item.heading}
-            </h2>
+            </p>
             <p className="w-11/12 text-2xl"> {item.text} </p>
           </div>
         ))}
