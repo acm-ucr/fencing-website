@@ -81,7 +81,7 @@ const Events = () => {
           </DialogContent>
         </Dialog>
       }
-      <Gallery />
+
       <Calendar
         mode="single"
         selected={new Date()}

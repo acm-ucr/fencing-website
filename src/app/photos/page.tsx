@@ -1,5 +1,6 @@
+import Gallery from "@/components/events/gallery";
 const Photos = () => {
-  return <div></div>;
+  return <Gallery />;
 };
 
 export default Photos;
