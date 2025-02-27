@@ -14,7 +14,6 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
-import Gallery from "./gallery";
 
 const Events = () => {
   const [current, setCurrent] = useState<EventProps>({});
