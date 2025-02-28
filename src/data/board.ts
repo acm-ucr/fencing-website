@@ -15,13 +15,13 @@ export const ITEMS = [
   },
   {
     name: "Dylan Imsande",
-    position: "Treasurer",
+    position: "Advisor",
     // email: "contact@gmail.com",
     image: Sample,
   },
   {
     name: "Nile Zingg",
-    position: "Armorer",
+    position: "Armorer and Treasurer",
     // email: "contact@gmail.com",
     image: Sample,
   },
