@@ -1,11 +1,3 @@
-import JoinC from "@/components/Join/Join";
+import JoinLanding from "@/components/Join";
 
-const Join = () => {
-  return (
-    <div>
-      <JoinC />
-    </div>
-  );
-};
-
-export default Join;
+export default JoinLanding;
