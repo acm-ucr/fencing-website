@@ -80,6 +80,7 @@ const Events = () => {
           </DialogContent>
         </Dialog>
       }
+
       <Calendar
         mode="single"
         selected={new Date()}
