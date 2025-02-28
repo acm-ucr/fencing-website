@@ -29,14 +29,23 @@ const Footer = () => {
         </div>
 
         <div className="flex flex-col gap-4">
-          <Link href="ucrfencingclub@gmail.com" className="flex items-center gap-2 text-white">
+          <Link
+            href="ucrfencingclub@gmail.com"
+            className="flex items-center gap-2 text-white"
+          >
             <SiGmail /> ucrfencingclub@gmail.com
           </Link>
-          <Link href="https://discord.com/invite/hZ3ze29Rf9" className="flex items-center gap-2 text-white">
+          <Link
+            href="https://discord.com/invite/hZ3ze29Rf9"
+            className="flex items-center gap-2 text-white"
+          >
             <SiDiscord />
             Fencing at UCR Discord
           </Link>
-          <Link href="https://www.instagram.com/fencingatucr/" className="flex items-center gap-2 text-white">
+          <Link
+            href="https://www.instagram.com/fencingatucr/"
+            className="flex items-center gap-2 text-white"
+          >
             <SiInstagram /> @fencingatucr
           </Link>
         </div>
