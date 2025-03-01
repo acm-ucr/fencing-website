@@ -26,7 +26,10 @@ const Footer = () => {
           </p>
         </div>
         <div className="flex flex-col items-center gap-2 md:gap-4">
-          <Link href="ucrfencingclub@gmail.com" className="flex items-center gap-2 text-white">
+          <Link
+            href="ucrfencingclub@gmail.com"
+            className="flex items-center gap-2 text-white"
+          >
             <SiGmail /> yourname@email.com
           </Link>
           <Link
