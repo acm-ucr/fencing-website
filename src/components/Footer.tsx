@@ -9,7 +9,7 @@ import {
 
 const Footer = () => {
   return (
-    <div className="relative flex h-auto flex-col items-center justify-center">
+    <div className="relative flex h-auto flex-col items-center justify-center md:h-40 md:flex-row">
       <Image
         src={footer}
         alt="Footer Image"
@@ -18,15 +18,15 @@ const Footer = () => {
 
       <div className="absolute left-0 top-0 h-full w-full bg-blue-950 opacity-50" />
 
-      <section className="z-20 flex h-full w-11/12 flex-col items-center justify-center p-4">
-        <div className="mb-4 text-center">
-          <p className="text-2xl font-bold text-white">Fencing Club</p>
+      <section className="z-20 flex h-full w-11/12 flex-col items-center justify-center p-4 md:w-10/12 md:flex-row md:justify-between">
+        <div className="mb-4 text-center md:mb-0 md:text-left">
+          <p className="text-4xl font-bold text-white">Fencing Club</p>
           <p className="italic text-white">
             University of California, Riverside
           </p>
         </div>
 
-        <div className="flex flex-col items-center gap-2">
+        <div className="flex flex-col items-center gap-2 md:gap-4">
           <Link href="" className="flex items-center gap-2 text-white">
             <SiGmail /> yourname@email.com
           </Link>
