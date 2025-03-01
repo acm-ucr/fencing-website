@@ -5,11 +5,15 @@ import { useState } from "react";
 import { items } from "@/data/navigation";
 
 const Navbar = () => {
-  const [active, setActive] = useState("About");
+  const [active, setActive] = useState("About"); 
 
-  return (
+  return ( //Takes in the link for fencing club and it takes you to the home page.
     <div className="absolute left-0 top-0 z-50 my-5 flex w-full items-center justify-between bg-transparent p-4 px-40 text-white">
-      <div className="text-2xl font-semibold">Fencing Club</div>
+      <Link href="/" passHref> 
+        <span className="text-2xl font-semibold cursor-pointer"> 
+          Fencing Club
+        </span>
+      </Link>
       <div className="flex space-x-16 text-lg">
         {items.map(({ name, link }) => (
           <Link key={name} href={link} passHref>
