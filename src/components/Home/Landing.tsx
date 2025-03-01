@@ -5,7 +5,7 @@ import Button from "../Button";
 
 const Landing = () => {
   return (
-    <div className="relative flex h-screen w-full flex-col items-center justify-center p-10">
+    <div className="relative flex h-[60vh] w-full flex-col items-center justify-center px-10 pt-10">
       <div className="absolute inset-0 opacity-20">
         <Image
           src={background}
