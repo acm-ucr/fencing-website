@@ -9,7 +9,7 @@ import {
 
 const Footer = () => {
   return (
-    <div className="relative flex h-auto flex-col items-center justify-center py-8">
+    <div className="relative flex h-auto flex-col items-center justify-center">
       <Image
         src={footer}
         alt="Footer Image"
