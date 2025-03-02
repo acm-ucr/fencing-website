@@ -1,11 +1,11 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
 import { items } from "@/data/navigation";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
-  const [active, setActive] = useState("About");
+  const pathname = usePathname();
 
   return (
     //Takes in the link for fencing club and it takes you to the home page.
@@ -17,17 +17,16 @@ const Navbar = () => {
       </Link>
       <div className="flex space-x-16 text-lg">
         {items.map(({ name, link }) => (
-          <Link key={name} href={link} passHref>
-            <span
-              onClick={() => setActive(name)}
-              className={`cursor-pointer ${
-                active === name
-                  ? "font-semibold text-blue-500 underline"
-                  : "text-white hover:text-gray-400"
-              }`}
-            >
-              {name}
-            </span>
+          <Link
+            key={name}
+            href={link}
+            className={`cursor-pointer ${
+              pathname === link
+                ? "font-semibold text-blue-500 underline"
+                : "text-white hover:text-gray-400"
+            }`}
+          >
+            {name}
           </Link>
         ))}
       </div>

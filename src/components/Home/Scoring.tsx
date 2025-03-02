@@ -30,9 +30,9 @@ const Scoring = () => {
       <div className="flex w-full flex-row justify-center gap-16 pt-16 text-white">
         {ScoringComponent.map((item, index) => (
           <div key={index} className="flex flex-col">
-            <h2 className="pb-4 text-3xl font-bold underline underline-offset-8">
+            <p className="pb-4 text-3xl font-bold underline underline-offset-8">
               {item.heading}
-            </h2>
+            </p>
             <p className="w-11/12 text-2xl"> {item.text} </p>
           </div>
         ))}
