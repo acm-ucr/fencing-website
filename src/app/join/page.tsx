@@ -1,3 +1,3 @@
-import JoinLanding from "@/components/Join";
+import Join from "@/components/Join";
 
-export default JoinLanding;
+export default Join;

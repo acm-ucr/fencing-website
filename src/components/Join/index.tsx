@@ -1,44 +1,50 @@
+import { Button } from "@/components/ui/button";
 import Image from "next/image";
 
 const Join = () => {
   return (
     <>
-      <div className="join flex items-center bg-gray-800 p-4 text-white shadow-lg">
-        <div className="join-image mr-6">
+      <div className="join flex items-center justify-center space-x-8 p-6">
+        <div className="flex-shrink-0">
           <Image
-            className="h-40 w-40 rounded-lg object-cover"
+            className="h-48 w-48 object-contain"
             src="/player.svg"
             alt="Fencer silhouette"
+            width={192}
+            height={192}
           />
         </div>
-        <div className="join-content flex-grow">
-          <h3 className="join-title mb-2 text-center text-xl font-bold text-blue-500">
+
+        <div className="flex flex-col items-center text-center">
+          <p className="mb-4 text-2xl font-bold text-white">
             Interested in Joining?
-          </h3>
-          <div className="join-content flex-grow">
-            <a
-              href="/membership-form"
-              className="join-button mb-2 block rounded-lg border border-blue-500 bg-transparent px-4 py-2 text-blue-500 transition hover:bg-blue-500 hover:text-white"
-            >
-              Membership Form
-            </a>
-            <a
-              href="/discord"
-              className="join-button block rounded-lg border border-blue-500 bg-transparent px-4 py-2 text-blue-500 transition hover:bg-blue-500 hover:text-white"
-            >
-              Discord Server
-            </a>
-          </div>
+          </p>
+          <Button
+            variant="outline"
+            size="lg"
+            className="mb-3 w-60 border-blue-500 bg-transparent text-blue-500 hover:bg-blue-500 hover:text-white"
+            asChild
+          >
+            <a href="/membership-form">Membership Form</a>
+          </Button>
+          <Button
+            variant="outline"
+            size="lg"
+            className="w-60 border-blue-500 bg-transparent text-blue-500 hover:bg-blue-500 hover:text-white"
+            asChild
+          >
+            <a href="/discord">Discord Server</a>
+          </Button>
         </div>
       </div>
-      <div className="flex h-4/6 flex-col items-center justify-center bg-black p-10">
+
+      <div className="flex h-4/6 flex-col items-center justify-center p-10">
         <div className="mb-5 h-1/6 w-4/5 rounded-lg bg-[#008CFF80]/50">
-          <div className="text-wrap px-10 py-3 text-center text-sm text-white">
+          <div className="px-10 py-3 text-center text-sm text-white">
             We look forward to seeing you soon! We have practice every Monday
             and Wednesday 8-10PM!
           </div>
         </div>
-
         <div className="h-1/2 w-4/5 rounded-lg border-2 border-blue-500 bg-gray-500"></div>
       </div>
     </>
