@@ -44,7 +44,7 @@ const Day = ({ date, displayMonth, events, setCurrent }: DayProps) => {
 
   return (
     <div
-      className={`${currentMonth ? "text-white" : "text-gray-400"} scrollbar-hidden h-24 overflow-y-scroll border`}
+      className={`${currentMonth ? "text-white" : "text-gray-400"} scrollbar-hidden h-20 overflow-y-scroll border md:h-24`}
     >
       <p className="sticky px-2 text-right">{date.getDate()}</p>
 
@@ -88,24 +88,25 @@ function Calendar({
     <DayPicker
       showOutsideDays={showOutsideDays}
       className={cn(
-        "rounded-none border-none bg-fencing-overall-background p-3",
+        "mb-10 rounded-none border-none bg-fencing-overall-background p-3",
         className,
       )}
       classNames={{
         months: "flex flex-col sm:flex-row space-y-4 sm:space-x-4 sm:space-y-0",
-        month: "space-y-4 w-2/3 flex justify-center flex-col mx-auto",
+        month:
+          "space-y-4 md:w-2/3 w-[90%] flex justify-center flex-col mx-auto",
         caption: "flex justify-center p-1 relative items-center",
         caption_label: "text-md font-bold text-white",
         nav: "space-x-1 flex items-center",
         nav_button: "h-7 w-7 bg-transparent p-0 opacity-50 hover:opacity-100",
-        nav_button_previous: "absolute left-1/3",
-        nav_button_next: "absolute right-1/3",
-        table: "w-full border-collapse space-y-1",
+        nav_button_previous: "absolute md:left-1/3 left-[20%]",
+        nav_button_next: "absolute md:right-1/3 right-[16%]",
+        table: "w-full border-collapse space-y-1 table-fixed",
         head_row: "flex",
         head_cell:
           "text-muted-foreground w-full font-normal text-[0.8rem] border text-white bg-fencing-border-blue bg-opacity-75",
         row: "flex w-full",
-        cell: "w-full text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md [&:has([aria-selected].day-outside)]:bg-accent/50 [&:has([aria-selected])]:bg-accent first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20",
+        cell: "text-center md:text-sm text-xs min-w-[14.285714285%] overflow-clip text-ellipsis p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md [&:has([aria-selected].day-outside)]:bg-accent/50 [&:has([aria-selected])]:bg-accent first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20",
         day: cn(
           buttonVariants({ variant: "ghost" }),
           "w-full p-0 font-normal aria-selected:opacity-100 rounded-none border",
