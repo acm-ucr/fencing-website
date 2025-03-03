@@ -13,11 +13,11 @@ const BoardCard = ({ position, name, email, image }: props) => {
       <p className="mb-2 text-center text-xl font-bold text-blue-500">
         {position}
       </p>
-        <Image
-          className="mb-4 block aspect-square rounded-lg object-cover mx-auto"
-         src={image}
-          alt={`${name} Picture`}
-        />
+      <Image
+        className="mx-auto mb-4 block aspect-square rounded-lg object-cover"
+        src={image}
+        alt={`${name} Picture`}
+      />
       <p className="text-lg font-semibold">{name}</p>
       <p>{email}</p>
     </div>
