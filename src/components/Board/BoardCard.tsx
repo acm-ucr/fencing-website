@@ -3,11 +3,10 @@ import Image, { StaticImageData } from "next/image";
 interface props {
   position: string;
   name: string;
-  email: string;
   image: StaticImageData;
 }
 
-const BoardCard = ({ position, name, email, image }: props) => {
+const BoardCard = ({ position, name, image }: props) => {
   return (
     <div className="text-center text-white">
       <p className="mb-2 text-center text-xl font-bold text-blue-500">
@@ -21,7 +20,6 @@ const BoardCard = ({ position, name, email, image }: props) => {
         />
       </div>
       <p className="text-lg font-semibold">{name}</p>
-      <p>{email}</p>
     </div>
   );
 };
