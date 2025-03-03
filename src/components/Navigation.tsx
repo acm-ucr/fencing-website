@@ -4,15 +4,15 @@ import Link from "next/link";
 import { useState, useRef, useEffect } from "react";
 import { items } from "@/data/navigation";
 import { motion } from "motion/react";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
-  const [active, setActive] = useState("About");
   const [isOpen, setIsOpen] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
+  const pathname = usePathname();
 
   const handleClick = () => {
     setIsOpen(!isOpen);
-    // console.log(!isOpen)
   };
 
   const closeMenu = () => {
@@ -42,15 +42,18 @@ const Navbar = () => {
 
   return (
     <div className="absolute left-0 top-0 z-50 my-5 flex w-full items-center justify-between bg-transparent p-4 px-10 text-white">
-      <div className="text-2xl font-semibold">Fencing Club</div>
+      <div className="z-20 text-2xl font-semibold">
+        <Link key="Home" href="/">
+          Fencing Club
+        </Link>
+      </div>
       {/* Normal Nav */}
       <div className="hidden space-x-16 text-lg md:flex">
         {items.map(({ name, link }) => (
           <Link key={name} href={link} passHref>
             <span
-              onClick={() => setActive(name)}
               className={`cursor-pointer ${
-                active === name
+                pathname === link
                   ? "font-semibold text-blue-500 underline"
                   : "text-white hover:text-gray-400"
               }`}
@@ -107,13 +110,12 @@ const Navbar = () => {
               <Link
                 href={link}
                 className={`${
-                  active === name
+                  pathname === link
                     ? "font-semibold text-blue-500 underline"
                     : "text-white hover:text-gray-400"
                 }`}
                 onClick={() => {
                   closeMenu();
-                  setActive(name);
                 }}
               >
                 {name}

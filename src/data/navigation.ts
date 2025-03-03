@@ -1,5 +1,5 @@
 export const items = [
-  { name: "About", link: "/" },
+  { name: "About", link: "/about" },
   { name: "Board", link: "/board" },
   { name: "Events", link: "/events" },
   { name: "Join Us", link: "/join" },
