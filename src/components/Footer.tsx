@@ -30,7 +30,7 @@ const Footer = () => {
             href="ucrfencingclub@gmail.com"
             className="flex items-center gap-2 text-white"
           >
-            <SiGmail /> yourname@email.com
+            <SiGmail /> ucrfencingclub@email.com
           </Link>
           <Link
             href="https://discord.com/invite/hZ3ze29Rf9"
