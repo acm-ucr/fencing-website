@@ -7,11 +7,11 @@ const What = () => {
       <div className="flex w-[90%] gap-16 px-20">
         <Image src={Photo} alt="What We Do" className="w-1/2 rounded-lg" />
         <div className="relative w-4/5">
-          <div className="rounded-2xl border-4 border-fencing-border-blue bg-[#082c4f] px-[8%] py-[3%] text-3xl text-white font-bold text-center">
+          <div className="rounded-2xl border-4 border-fencing-border-blue bg-[#082c4f] px-[8%] py-[3%] text-center text-3xl font-bold text-white">
             What we do!
           </div>
 
-          <p className="h-3/4 rounded-lg bg-fencing-border-blue/40 text-2xl text-white mt-10 p-10">
+          <p className="mt-10 h-3/4 rounded-lg bg-fencing-border-blue/40 p-10 text-2xl text-white">
             The UCR Fencing Club is a community for students who are passionate
             about the sport of fencing. Whether you are a beginner or an
             experienced fencer, we provide a welcoming environment for everyone
@@ -23,7 +23,7 @@ const What = () => {
           </p>
         </div>
       </div>
-      </div>
+    </div>
   );
 };
 
