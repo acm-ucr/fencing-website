@@ -13,12 +13,12 @@ export const ITEMS = [
   },
   {
     name: "Dylan Imsande",
-    position: "Treasurer",
+    position: "Advisor",
     image: Sample,
   },
   {
     name: "Nile Zingg",
-    position: "Armorer",
+    position: "Armorer and Treasurer",
     image: Sample,
   },
   {
