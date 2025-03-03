@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Link from "next/link";
 
 const Join = () => {
   return (
@@ -19,22 +20,24 @@ const Join = () => {
           <p className="mb-4 text-2xl font-bold text-white">
             Interested in Joining?
           </p>
-          <Button
-            variant="outline"
-            size="lg"
-            className="mb-3 w-60 border-blue-500 bg-transparent text-blue-500 hover:bg-blue-500 hover:text-white"
-            asChild
-          >
-            <a href="/membership-form">Membership Form</a>
-          </Button>
-          <Button
-            variant="outline"
-            size="lg"
-            className="w-60 border-blue-500 bg-transparent text-blue-500 hover:bg-blue-500 hover:text-white"
-            asChild
-          >
-            <a href="/discord">Discord Server</a>
-          </Button>
+          <Link className="no-underline" href="/">
+            <Button
+              variant="outline"
+              size="lg"
+              className="mb-3 w-60 border-blue-500 bg-transparent text-blue-500 hover:bg-blue-500 hover:text-white"
+            >
+              Membership Form
+            </Button>
+          </Link>
+          <Link className="no-underline" href="/">
+            <Button
+              variant="outline"
+              size="lg"
+              className="w-60 border-blue-500 bg-transparent text-blue-500 hover:bg-blue-500 hover:text-white"
+            >
+              Discord Server
+            </Button>
+          </Link>
         </div>
       </div>
 
