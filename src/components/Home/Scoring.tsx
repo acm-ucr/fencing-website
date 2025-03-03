@@ -5,21 +5,21 @@ import { ScoringComponent } from "@/data/ScoringComponent";
 const Scoring = () => {
   return (
     <div className="bg-[#091422] p-36">
-      <div className="flex flex-col items-center md:flex-row justify-center gap-16 text-white">
+      <div className="flex flex-col items-center justify-center gap-16 text-white md:flex-row">
         <div className="flex items-center justify-center">
           <div className="w-[100%]">
             <Image src={Score} alt="Score Pic" />
           </div>
         </div>
 
-        <div className="items-left flex flex-col justify-center order-first md:order-none">
+        <div className="items-left order-first flex flex-col justify-center md:order-none">
           <div className="flex h-20 w-full items-center rounded-lg border-4 border-[#008CFF] bg-[#008CFF33]">
-            <p className="px-8 text-xl md:text-2xl font-bold text-white text-center md:text-left">
+            <p className="px-8 text-center text-xl font-bold text-white md:text-left md:text-2xl">
               Format & Scoring
             </p>
           </div>
 
-          <p className="pt-6 text-xl md:text-2xl text-white">
+          <p className="pt-6 text-xl text-white md:text-2xl">
             {" "}
             Fencers score points by striking opponents on a valid part of their
             body or forcing their opponent off the piste.{" "}
@@ -27,10 +27,10 @@ const Scoring = () => {
         </div>
       </div>
 
-      <div className="flex w-full md:flex-row flex-col justify-center gap-16 pt-16 text-white">
+      <div className="flex w-full flex-col justify-center gap-16 pt-16 text-white md:flex-row">
         {ScoringComponent.map((item, index) => (
           <div key={index} className="flex flex-col">
-            <p className="pb-4 text-2xl md:text-3xl font-bold underline underline-offset-8">
+            <p className="pb-4 text-2xl font-bold underline underline-offset-8 md:text-3xl">
               {item.heading}
             </p>
             <p className="w-11/12 text-xl md:text-2xl"> {item.text} </p>
