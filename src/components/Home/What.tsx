@@ -4,14 +4,14 @@ import Image from "next/image";
 const What = () => {
   return (
     <div className="flex items-center justify-center">
-      <div className="flex w-[90%] gap-4 px-20">
-        <Image src={Photo} alt="What We Do" className="w-1/2" />
+      <div className="flex w-[90%] gap-16 px-20">
+        <Image src={Photo} alt="What We Do" className="w-1/2 rounded-lg" />
         <div className="relative w-4/5">
-          <div className="rounded-2xl border-4 border-fencing-border-blue bg-[#082c4f] px-[8%] py-[3%] text-2xl text-white">
+          <div className="rounded-2xl border-4 border-fencing-border-blue bg-[#082c4f] px-[8%] py-[3%] text-3xl text-white font-bold text-center">
             What we do!
           </div>
 
-          <p className="rounded bg-fencing-border-blue p-4 text-xl text-white">
+          <p className="h-3/4 rounded-lg bg-fencing-border-blue/40 text-2xl text-white mt-10 p-10">
             The UCR Fencing Club is a community for students who are passionate
             about the sport of fencing. Whether you are a beginner or an
             experienced fencer, we provide a welcoming environment for everyone
