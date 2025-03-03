@@ -91,7 +91,7 @@ const Navbar = () => {
         animate={isOpen ? "open" : "closed"}
         exit="closed"
         ref={containerRef}
-        className="absolute left-0 top-0 flex h-[40vh] w-full flex-col items-center justify-center to-fencing-overall-background shadow-lg md:hidden"
+        className="absolute left-0 top-0 flex h-[40vh] w-full flex-col items-center justify-center bg-fencing-overall-background shadow-lg md:hidden"
         variants={sidebarVariants}
       >
         <motion.ul className="list-none space-y-6 text-2xl text-white">
