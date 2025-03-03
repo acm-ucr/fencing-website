@@ -25,7 +25,7 @@ const Footer = () => {
             University of California, Riverside
           </p>
         </div>
-        <div className="flex flex-col items-center gap-2 md:gap-4">
+        <div className="items-left flex flex-col gap-2 md:gap-4">
           <Link
             href="ucrfencingclub@gmail.com"
             className="flex items-center gap-2 text-white"
