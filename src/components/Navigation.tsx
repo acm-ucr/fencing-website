@@ -1,22 +1,32 @@
-import React from "react";
-import Link from "next/link";
-import { ITEMS } from "@/data/navigation";
+"use client";
 
-const Navigation = () => {
+import Link from "next/link";
+import { items } from "@/data/navigation";
+import { usePathname } from "next/navigation";
+
+const Navbar = () => {
+  const pathname = usePathname();
+
   return (
-    <>
-      <div className="grid grid-cols-10 grid-rows-2 font-bold">
-        {ITEMS.map((item) => (
+    <div className="relative my-5 flex w-full items-center justify-between bg-transparent p-4 px-40 text-white">
+      <div className="text-2xl font-semibold">Fencing Club</div>
+      <div className="flex space-x-16 text-lg">
+        {items.map(({ name, link }) => (
           <Link
-            href={`/${item.page}`}
-            className={`${item.col} ${item.cole} row-start-2 flex justify-center text-2xl text-white active:text-[#008BFE] active:underline`}
+            key={name}
+            href={link}
+            className={`cursor-pointer ${
+              pathname === link
+                ? "font-semibold text-blue-500 underline"
+                : "text-white hover:text-gray-400"
+            }`}
           >
-            {item.name}
+            {name}
           </Link>
         ))}
       </div>
-    </>
+    </div>
   );
 };
 
-export default Navigation;
+export default Navbar;

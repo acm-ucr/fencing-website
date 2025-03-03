@@ -1,11 +1,12 @@
-import React from "react";
-
-const TypeOfFencingSwords = () => {
+type props = {
+  text: string;
+};
+const Title = ({ text }: props) => {
   return (
-    <div className="flex h-1 w-1/5 flex-row items-center justify-center rounded-xl border-2 border-fencing-border-blue bg-fencing-title-background-blue p-5 font-bold text-white">
-      Types of Fencing Swords
+    <div className="flex h-screen items-start justify-center pt-32">
+      <div className="text-4xl font-bold text-white">{text}</div>
     </div>
   );
 };
 
-export default TypeOfFencingSwords;
+export default Title;
