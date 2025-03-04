@@ -24,7 +24,7 @@ const Join = () => {
             <Button
               variant="outline"
               size="lg"
-              className="mb-3 w-60 border-blue-500 bg-transparent text-blue-500 hover:bg-blue-500 hover:text-white"
+              className="mb-3 w-60 border-blue-500 bg-transparent text-white hover:bg-blue-500 hover:text-white"
             >
               Membership Form
             </Button>
@@ -33,7 +33,7 @@ const Join = () => {
             <Button
               variant="outline"
               size="lg"
-              className="w-60 border-blue-500 bg-transparent text-blue-500 hover:bg-blue-500 hover:text-white"
+              className="w-60 border-blue-500 bg-transparent text-white hover:bg-blue-500 hover:text-white"
             >
               Discord Server
             </Button>
