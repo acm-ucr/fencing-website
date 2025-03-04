@@ -1,11 +1,3 @@
-import JoinC from "@/components/Join/Join";
-
-const Join = () => {
-  return (
-    <div>
-      <JoinC />
-    </div>
-  );
-};
+import Join from "@/components/Join/index";
 
 export default Join;

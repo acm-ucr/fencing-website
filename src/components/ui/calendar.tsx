@@ -1,7 +1,7 @@
 "use client";
 
 import * as React from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { MoveLeft, MoveRight } from "lucide-react";
 import { DayPicker } from "react-day-picker";
 
 import { cn } from "@/lib/utils";
@@ -44,7 +44,7 @@ const Day = ({ date, displayMonth, events, setCurrent }: DayProps) => {
 
   return (
     <div
-      className={`${currentMonth ? "text-black" : "text-gray-400"} h-24 overflow-y-scroll border`}
+      className={`${currentMonth ? "text-white" : "text-gray-400"} scrollbar-hidden h-24 overflow-y-scroll border`}
     >
       <p className="sticky px-2 text-right">{date.getDate()}</p>
 
@@ -58,17 +58,16 @@ const Day = ({ date, displayMonth, events, setCurrent }: DayProps) => {
         ) {
           return (
             <div
-              className="my-1 text-ellipsis bg-fencing-border-blue p-1 text-left text-white"
+              className="my-1 cursor-pointer text-ellipsis bg-fencing-border-blue bg-opacity-75 p-1 text-center text-white hover:bg-opacity-100"
               key={index}
               onClick={() =>
                 setCurrent({ title, start, end, location, description })
               }
             >
-              {title} -{" "}
-              {startDate.toLocaleTimeString("en-US", {
-                hour: "2-digit",
-                minute: "2-digit",
-              })}
+              {startDate.getHours() < 12
+                ? (startDate.getHours() % 12) + "am"
+                : (startDate.getHours() % 12) + "pm"}{" "}
+              {title}
             </div>
           );
         }
@@ -88,12 +87,15 @@ function Calendar({
   return (
     <DayPicker
       showOutsideDays={showOutsideDays}
-      className={cn("p-3", className)}
+      className={cn(
+        "rounded-none border-none bg-fencing-overall-background p-3",
+        className,
+      )}
       classNames={{
         months: "flex flex-col sm:flex-row space-y-4 sm:space-x-4 sm:space-y-0",
-        month: "space-y-4 w-full",
+        month: "space-y-4 w-2/3 flex justify-center flex-col mx-auto",
         caption: "flex justify-center p-1 relative items-center",
-        caption_label: "text-sm font-medium",
+        caption_label: "text-md font-bold text-white",
         nav: "space-x-1 flex items-center",
         nav_button: "h-7 w-7 bg-transparent p-0 opacity-50 hover:opacity-100",
         nav_button_previous: "absolute left-1/3",
@@ -101,7 +103,7 @@ function Calendar({
         table: "w-full border-collapse space-y-1",
         head_row: "flex",
         head_cell:
-          "text-muted-foreground rounded-md w-full font-normal text-[0.8rem]",
+          "text-muted-foreground w-full font-normal text-[0.8rem] border text-white bg-fencing-border-blue bg-opacity-75",
         row: "flex w-full",
         cell: "w-full text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md [&:has([aria-selected].day-outside)]:bg-accent/50 [&:has([aria-selected])]:bg-accent first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20",
         day: cn(
@@ -114,18 +116,23 @@ function Calendar({
         day_today: "bg-accent text-accent-foreground",
         day_outside:
           "day-outside text-muted-foreground aria-selected:bg-accent/50 aria-selected:text-muted-foreground",
-        day_disabled: "text-muted-foreground opacity-50",
-        day_range_middle:
-          "aria-selected:bg-accent aria-selected:text-accent-foreground",
+        day_disabled: "text-white opacity-50",
+        day_range_middle: "aria-selected:bg-accent aria-selected:text-white",
         day_hidden: "invisible",
         ...classNames,
       }}
       components={{
         IconLeft: ({ className, ...props }) => (
-          <ChevronLeft className={cn("h-4 w-4", className)} {...props} />
+          <MoveLeft
+            className={cn("h-5 w-5 text-white", className)}
+            {...props}
+          />
         ),
         IconRight: ({ className, ...props }) => (
-          <ChevronRight className={cn("h-4 w-4", className)} {...props} />
+          <MoveRight
+            className={cn("h-5 w-5 text-white", className)}
+            {...props}
+          />
         ),
         Day: ({ displayMonth, date }) => (
           <Day
