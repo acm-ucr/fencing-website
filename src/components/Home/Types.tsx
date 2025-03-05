@@ -52,7 +52,7 @@ const Types = () => {
         </div>
       </div>
 
-      <div className="grid min-h-0 grid-rows-3 gap-y-0 md:hidden">
+      <div className="grid-auto-rows-auto grid min-h-0 gap-y-0 md:hidden">
         <div className="flex h-full flex-col items-center justify-center">
           <div className="mb-8 h-1/6 w-4/6 rounded-2xl border-2 border-[#008CFF80] bg-[#008CFF80]/20">
             <div className="py-2 text-center text-xl font-bold text-white">
