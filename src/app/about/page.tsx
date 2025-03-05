@@ -1,5 +1,7 @@
+import About from "@/components/Home/About";
+
 const page = () => {
-  return <div>about page</div>;
+  return <About />;
 };
 
 export default page;
