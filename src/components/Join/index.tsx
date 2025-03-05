@@ -42,7 +42,7 @@ const Join = () => {
       </div>
 
       <div className="flex h-4/6 flex-col items-center justify-center space-y-7 p-24">
-        <div className="mb-5 h-1/6 w-4/5 text-wrap rounded-lg bg-[#008CFF80]/50 px-10 py-3 text-center text-sm text-white">
+        <div className="mb-5 h-1/6 w-4/5 text-wrap rounded-lg bg-[#008CFF80]/50 px-10 py-3 text-center text-2xl text-white">
           We look forward to seeing you soon! We have practice every Monday and
           Wednesday 8-10PM!
         </div>
