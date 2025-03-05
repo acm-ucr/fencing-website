@@ -1,7 +1,6 @@
-export const ITEMS = [
-  { name: "Fencing Club", page: "", col: "col-start-2", cole: "col-end-4 " },
-  { name: "About", page: "about", col: "col-start-6" },
-  { name: "Board", page: "board", col: "col-start-7" },
-  { name: "Events", page: "events", col: "col-start-8" },
-  { name: "Join Us", page: "join-us", col: "col-start-9" },
+export const items = [
+  { name: "Board", link: "/board" },
+  { name: "Events", link: "/events" },
+  { name: "Join Us", link: "/join" },
+  { name: "Gallery", link: "/photos" },
 ];

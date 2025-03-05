@@ -1,17 +1,9 @@
-import About from "@/components/About";
-import Join from "@/components/Join";
-import Landing from "@/components/Landing";
-import What from "@/components/What";
-import Title from "@/components/Title";
+import About from "@/components/Home/About";
 
 const Home = () => {
   return (
-    <div className="flex h-screen w-screen flex-col items-center justify-center">
-      <Landing />
-      <Title text="Meet The Board" />
+    <div className="flex w-full flex-col items-center justify-center bg-fencing-overall-background">
       <About />
-      <What />
-      <Join />
     </div>
   );
 };
