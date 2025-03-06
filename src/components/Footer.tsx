@@ -9,7 +9,7 @@ import {
 
 const Footer = () => {
   return (
-    <div className="relative flex h-auto flex-col items-center justify-center md:h-40 md:flex-row">
+    <div className="relative mt-10 flex h-auto flex-col items-center justify-center md:h-40 md:flex-row">
       <Image
         src={footer}
         alt="Footer Image"
