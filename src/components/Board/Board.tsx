@@ -6,7 +6,7 @@ import background from "@/public/background.webp";
 
 function Board() {
   return (
-    <div className="flex flex-col items-center justify-center p-8">
+    <div className="flex flex-col items-center justify-center">
       <div className="relative flex w-full flex-col items-center justify-center p-10 py-44">
         <div className="absolute inset-0 opacity-20">
           <Image
