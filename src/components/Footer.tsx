@@ -28,22 +28,23 @@ const Footer = () => {
         <div className="items-left flex flex-col gap-2 md:gap-4">
           <Link
             href="ucrfencingclub@gmail.com"
-            className="flex items-center gap-2 rounded-md text-white outline-offset-2 hover:outline focus:text-purple-400"
+            className="flex items-center gap-2 rounded-md text-white"
           >
-            <SiGmail /> ucrfencingclub@email.com
+            <SiGmail className="hover:animate-bounce" />{" "}
+            ucrfencingclub@email.com
           </Link>
           <Link
             href="https://discord.com/invite/hZ3ze29Rf9"
-            className="flex items-center gap-2 rounded-md text-white outline-offset-2 hover:outline focus:text-purple-400"
+            className="flex items-center gap-2 rounded-md text-white"
           >
-            <SiDiscord />
+            <SiDiscord className="hover:animate-bounce" />
             Fencing at UCR Discord
           </Link>
           <Link
             href="https://www.instagram.com/fencingatucr/"
-            className="flex items-center gap-2 rounded-md text-white outline-offset-2 hover:outline focus:text-purple-400"
+            className="flex items-center gap-2 rounded-md text-white"
           >
-            <SiInstagram /> @fencingatucr
+            <SiInstagram className="hover:animate-bounce" /> @fencingatucr
           </Link>
         </div>
       </section>
