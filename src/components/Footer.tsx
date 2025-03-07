@@ -28,20 +28,20 @@ const Footer = () => {
         <div className="items-left flex flex-col gap-2 md:gap-4">
           <Link
             href="ucrfencingclub@gmail.com"
-            className="flex items-center gap-2 text-white"
+            className="flex items-center gap-2 text-white hover:text-blue-700"
           >
             <SiGmail /> ucrfencingclub@email.com
           </Link>
           <Link
             href="https://discord.com/invite/hZ3ze29Rf9"
-            className="flex items-center gap-2 text-white"
+            className="flex items-center gap-2 text-white hover:text-blue-700"
           >
             <SiDiscord />
             Fencing at UCR Discord
           </Link>
           <Link
             href="https://www.instagram.com/fencingatucr/"
-            className="flex items-center gap-2 text-white"
+            className="flex items-center gap-2 text-white hover:text-blue-700"
           >
             <SiInstagram /> @fencingatucr
           </Link>
