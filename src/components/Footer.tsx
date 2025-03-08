@@ -30,20 +30,21 @@ const Footer = () => {
             href="ucrfencingclub@gmail.com"
             className="flex items-center gap-2 text-white"
           >
-            <SiGmail /> ucrfencingclub@email.com
+            <SiGmail className="hover:-translate-y-1" />
+            ucrfencingclub@email.com
           </Link>
           <Link
             href="https://discord.com/invite/hZ3ze29Rf9"
             className="flex items-center gap-2 text-white"
           >
-            <SiDiscord />
+            <SiDiscord className="hover:-translate-y-1" />
             Fencing at UCR Discord
           </Link>
           <Link
             href="https://www.instagram.com/fencingatucr/"
             className="flex items-center gap-2 text-white"
           >
-            <SiInstagram /> @fencingatucr
+            <SiInstagram className="hover:-translate-y-1" /> @fencingatucr
           </Link>
         </div>
       </section>
