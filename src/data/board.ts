@@ -1,34 +1,39 @@
-import Sample from "@/public/board/sample.webp";
+import alex from "@/public/board/alex-pres_result.webp";
+import nathan from "@/public/board/nathan-vp_result.webp";
+import dylan from "@/public/board/dylan-advisor_result.webp";
+import nile from "@/public/board/nile-armorer_result.webp";
+import jason from "@/public/board/jason-pr_result.webp";
+import alston from "@/public/board/alston-sec_result.webp";
 
 export const ITEMS = [
   {
     name: "Alexandria Knight",
     position: "President",
-    image: Sample,
+    image: alex,
   },
   {
     name: "Nathan Hillyer",
     position: "Vice President",
-    image: Sample,
+    image: nathan,
   },
   {
     name: "Dylan Imsande",
     position: "Advisor",
-    image: Sample,
+    image: dylan,
   },
   {
     name: "Nile Zingg",
     position: "Armorer and Treasurer",
-    image: Sample,
+    image: nile,
   },
   {
     name: "Jason Suryadi",
     position: "PR Director",
-    image: Sample,
+    image: jason,
   },
   {
     name: "Alston Huang",
     position: "Secretary",
-    image: Sample,
+    image: alston,
   },
 ];
