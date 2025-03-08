@@ -1,10 +1,13 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
+import Title from "../Title";
 
 const Join = () => {
   return (
     <>
+      <Title text="Join Us" />
+
       <div className="join flex items-center justify-center space-x-14 p-6">
         <div className="flex-shrink-0">
           <Image

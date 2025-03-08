@@ -41,7 +41,7 @@ const Navbar = () => {
   }, [isOpen]);
 
   return (
-    <div className="relative left-0 top-0 z-50 my-5 flex w-full items-center justify-between bg-transparent p-4 px-10 text-white">
+    <div className="absolute left-0 top-0 z-50 my-5 flex w-full items-center justify-between bg-transparent p-4 px-10 text-white">
       <div className="z-20 cursor-pointer text-2xl font-semibold">
         <Link href="/">Fencing Club</Link>
       </div>
