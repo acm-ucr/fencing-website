@@ -11,7 +11,7 @@ const Title = ({ text }: props) => {
         id="full-title-container"
         className="relative flex w-full flex-col items-center justify-center p-10 py-44"
       >
-        <div id="bg-img-container" className="absolute inset-0 opacity-20">
+        <div id="bg-img-container" className="opacity-20">
           <Image
             src={background}
             alt="Fencing Background"
