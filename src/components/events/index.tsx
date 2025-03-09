@@ -14,6 +14,7 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
+import Title from "../Title";
 
 const Events = () => {
   const [current, setCurrent] = useState<EventProps>({});
@@ -50,6 +51,7 @@ const Events = () => {
 
   return (
     <>
+      <Title text="Events" />
       {
         <Dialog
           open={Object.keys(current).length > 0}
