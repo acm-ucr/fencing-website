@@ -1,15 +1,21 @@
+"use client";
 import Score from "@/public/score.svg";
 import Image from "next/image";
 import { ScoringComponent } from "@/data/ScoringComponent";
+import { motion } from "motion/react";
 
 const Scoring = () => {
   return (
+    
     <div className="bg-[#091422] px-36 pb-20">
+      <motion.div initial={{ x: 30, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }} transition={{ duration: 0.8, delay: 0.2 }}>
       <div className="flex flex-col items-center justify-center gap-10 text-white md:flex-row">
         <div className="flex items-center justify-center md:w-[40%]">
+        <motion.div initial={{ y: 30, opacity: 0 }} whileInView={{ y: 0, opacity: 1 }} transition={{ duration: 0.8, delay: 0.2 }}>
           <div className="w-[80%] md:w-[100%]">
             <Image src={Score} alt="Score Pic" />
           </div>
+          </motion.div>
         </div>
 
         <div className="items-left order-first flex flex-col justify-center md:order-none">
@@ -26,7 +32,8 @@ const Scoring = () => {
           </p>
         </div>
       </div>
-
+      </motion.div>
+      <motion.div initial={{ x: 30, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }} transition={{ duration: 0.8, delay: 0.4}}>
       <div className="flex w-full flex-col justify-center gap-16 pt-16 text-white md:flex-row">
         {ScoringComponent.map((item, index) => (
           <div key={index} className="flex flex-col">
@@ -37,6 +44,7 @@ const Scoring = () => {
           </div>
         ))}
       </div>
+      </motion.div>
     </div>
   );
 };
