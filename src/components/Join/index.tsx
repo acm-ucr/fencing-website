@@ -13,7 +13,7 @@ const Join = () => {
         className="box"
         initial={{ y: 50, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
-        transition={{ duration: 1, delay: 0.2 }}
+        transition={{ duration: 1, delay: 0.5 }}
       >
         <div className="join flex items-center justify-center gap-10 pt-20">
           <div className="flex-shrink-0">

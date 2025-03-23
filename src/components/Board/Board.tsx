@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import BoardCard from "@/components/Board/BoardCard";
 import { ITEMS } from "@/data/board";
