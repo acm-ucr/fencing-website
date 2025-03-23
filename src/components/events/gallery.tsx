@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import { galleryItems } from "@/data/gallery";
 import Title from "../Title";

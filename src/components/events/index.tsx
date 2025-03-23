@@ -1,5 +1,6 @@
 "use client";
 
+import { motion } from "motion/react";
 import {
   Calendar,
   EventProps,
@@ -52,44 +53,61 @@ const Events = () => {
   return (
     <>
       <Title text="Events" />
-      {
-        <Dialog
-          open={Object.keys(current).length > 0}
-          onOpenChange={() => setCurrent({})}
-        >
-          <DialogContent>
-            <DialogHeader>
-              <DialogTitle>
-                <p className="text-xl">{current.title}</p>
-                <p className="text-base font-normal">
-                  {current.location} from{" "}
-                  {new Date(current.start as string).toLocaleTimeString(
-                    "en-US",
-                    {
-                      hour: "2-digit",
-                      minute: "2-digit",
-                    },
-                  )}{" "}
-                  to{" "}
-                  {new Date(current.end as string).toLocaleTimeString("en-US", {
-                    hour: "2-digit",
-                    minute: "2-digit",
-                  })}
-                </p>
-              </DialogTitle>
-              <DialogDescription>{current.description}</DialogDescription>
-            </DialogHeader>
-          </DialogContent>
-        </Dialog>
-      }
+      <motion.div
+        className="box"
+        initial={{ y: 30, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.7, delay: 0.2 }}
+      >
+        {
+          <Dialog
+            open={Object.keys(current).length > 0}
+            onOpenChange={() => setCurrent({})}
+          >
+            <DialogContent>
+              <DialogHeader>
+                <DialogTitle>
+                  <p className="text-xl">{current.title}</p>
+                  <p className="text-base font-normal">
+                    {current.location} from{" "}
+                    {new Date(current.start as string).toLocaleTimeString(
+                      "en-US",
+                      {
+                        hour: "2-digit",
+                        minute: "2-digit",
+                      },
+                    )}{" "}
+                    to{" "}
+                    {new Date(current.end as string).toLocaleTimeString(
+                      "en-US",
+                      {
+                        hour: "2-digit",
+                        minute: "2-digit",
+                      },
+                    )}
+                  </p>
+                </DialogTitle>
+                <DialogDescription>{current.description}</DialogDescription>
+              </DialogHeader>
+            </DialogContent>
+          </Dialog>
+        }
+      </motion.div>
 
-      <Calendar
-        mode="single"
-        selected={new Date()}
-        className="w-full"
-        events={data}
-        setCurrent={setCurrent}
-      />
+      <motion.div
+        className="box"
+        initial={{ y: 30, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.7, delay: 0.4 }}
+      >
+        <Calendar
+          mode="single"
+          selected={new Date()}
+          className="w-full"
+          events={data}
+          setCurrent={setCurrent}
+        />
+      </motion.div>
     </>
   );
 };
