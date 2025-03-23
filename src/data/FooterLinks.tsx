@@ -1,4 +1,8 @@
-import { SiInstagram, SiGmail, SiDiscord } from "react-icons/si";
+import {
+  SiInstagram,
+  SiGmail,
+  SiDiscord,
+} from "@icons-pack/react-simple-icons";
 
 interface footerTypes {
   icon: React.ReactNode;

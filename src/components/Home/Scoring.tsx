@@ -26,10 +26,8 @@ const Scoring = () => {
           </div>
 
           <div className="items-left order-first flex flex-col justify-center md:order-none">
-            <div className="flex h-20 w-full items-center justify-center rounded-2xl border-4 border-fencing-border-blue bg-fencing-title-background-blue">
-              <p className="px-8 text-center text-xl font-bold text-white md:text-3xl">
-                Format & Scoring
-              </p>
+            <div className="flex h-20 w-full items-center justify-center rounded-2xl border-4 border-fencing-border-blue bg-fencing-title-background-blue px-8 text-center text-xl font-bold text-white md:text-3xl">
+              Format & Scoring
             </div>
 
             <p className="pt-6 text-xl text-white md:text-2xl">

@@ -14,7 +14,7 @@ const Footer = () => {
 
       <div className="absolute left-0 top-0 h-full w-full bg-blue-950 opacity-50" />
 
-      <section className="z-20 flex h-full w-11/12 flex-col items-center justify-center p-4 md:w-10/12 md:flex-row md:justify-between">
+      <div className="z-20 flex h-full w-11/12 flex-col items-center justify-center p-4 md:w-10/12 md:flex-row md:justify-between">
         <div className="mb-4 text-center md:mb-0 md:text-left">
           <p className="text-4xl font-bold text-white">Fencing Club</p>
           <p className="italic text-white">
@@ -33,7 +33,7 @@ const Footer = () => {
             </Link>
           ))}
         </div>
-      </section>
+      </div>
     </div>
   );
 };

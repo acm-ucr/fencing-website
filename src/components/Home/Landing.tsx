@@ -2,7 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import background from "@/public/background.webp";
-import Button from "../Button";
+import Button from "@/components/Button";
 import { motion } from "motion/react";
 
 const Landing = () => {

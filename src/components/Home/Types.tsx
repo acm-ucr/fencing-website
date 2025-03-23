@@ -18,13 +18,9 @@ const Types = () => {
           duration: 0.7,
           delay: 0.2,
         }}
-        className=""
+        className="bg-fencing-border-background-blue mb-10 hidden h-20 w-[40%] min-w-[50px] items-center justify-center justify-items-center rounded-2xl border-4 border-fencing-border-blue py-3 text-center text-3xl font-bold md:flex"
       >
-        <div className="mb-10 hidden justify-items-center md:flex">
-          <p className="bg-fencing-border-background-blue flex h-20 w-[40%] min-w-[50px] items-center justify-center rounded-2xl border-4 border-fencing-border-blue py-3 text-center text-3xl font-bold">
-            Types of Fencing Swords
-          </p>
-        </div>
+        Types of Fencing Swords
       </motion.div>
 
       <div className="hidden grid-rows-3 md:grid">
@@ -39,11 +35,9 @@ const Types = () => {
               duration: 0.7,
               delay: 0.2,
             }}
-            className="flex h-[75%] w-2/5 items-center justify-center rounded-2xl border-2 border-white"
+            className="flex h-[75%] w-2/5 items-center justify-center rounded-2xl border-2 border-white text-3xl font-bold"
           >
-            <div className="">
-              <p className="text-3xl font-bold">FOIL</p>
-            </div>
+            FOIL
           </motion.div>
           <div className="mx-2 flex flex-col items-center justify-center p-5">
             <motion.div
@@ -70,12 +64,10 @@ const Types = () => {
                 duration: 0.7,
                 delay: 0.2,
               }}
-              className=""
+              className="text-2xl"
             >
-              <p className="text-2xl">
-                The foil is a light thrusting weapon with a maximum weight of
-                500 grams. The foil targets the torso, not the arms or legs.{" "}
-              </p>
+              The foil is a light thrusting weapon with a maximum weight of 500
+              grams. The foil targets the torso, not the arms or legs.{" "}
             </motion.div>
           </div>
         </div>
@@ -105,12 +97,10 @@ const Types = () => {
                 duration: 0.7,
                 delay: 0.2,
               }}
-              className=""
+              className="text-2xl"
             >
-              <p className="text-2xl">
-                The epee is a thrusting weapon like the foil, but with a maximum
-                weight of 775 grams. The entire body is a valid target.{" "}
-              </p>
+              The epee is a thrusting weapon like the foil, but with a maximum
+              weight of 775 grams. The entire body is a valid target.{" "}
             </motion.div>
           </div>
           <motion.div
@@ -123,11 +113,9 @@ const Types = () => {
               duration: 0.7,
               delay: 0.2,
             }}
-            className="flex h-[75%] w-2/5 items-center justify-center rounded-2xl border-2 border-white"
+            className="flex h-[75%] w-2/5 items-center justify-center rounded-2xl border-2 border-white text-3xl font-bold"
           >
-            <div className="">
-              <p className="text-3xl font-bold">EPEE</p>
-            </div>
+            EPEE
           </motion.div>
         </div>
         <div className="flex flex-row items-center justify-center">
@@ -141,11 +129,9 @@ const Types = () => {
               duration: 0.7,
               delay: 0.2,
             }}
-            className="flex h-[75%] w-2/5 items-center justify-center rounded-2xl border-2 border-white"
+            className="flex h-[75%] w-2/5 items-center justify-center rounded-2xl border-2 border-white text-3xl font-bold"
           >
-            <div className="">
-              <p className="text-3xl font-bold">SABRE</p>
-            </div>
+            SABRE
           </motion.div>
           <div className="mx-2 flex flex-col items-center justify-center p-5">
             <motion.div
@@ -172,13 +158,11 @@ const Types = () => {
                 duration: 0.7,
                 delay: 0.2,
               }}
-              className=""
+              className="text-2xl"
             >
-              <p className="text-2xl">
-                The sabre is a light cutting and thrusting weapon targeting
-                above the waist, except the weapon hand. The maximum weight of a
-                sabre is 500 grams.{" "}
-              </p>
+              The sabre is a light cutting and thrusting weapon targeting above
+              the waist, except the weapon hand. The maximum weight of a sabre
+              is 500 grams.{" "}
             </motion.div>
           </div>
         </div>
