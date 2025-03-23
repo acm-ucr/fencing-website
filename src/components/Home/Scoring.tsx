@@ -6,7 +6,7 @@ import { motion } from "motion/react";
 
 const Scoring = () => {
   return (
-    <div className="bg-[#091422] px-36 pb-20">
+    <div className="w-5/6 py-16">
       <motion.div
         initial={{ x: 30, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
