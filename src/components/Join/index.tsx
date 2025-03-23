@@ -30,7 +30,10 @@ const Join = () => {
             <p className="mb-4 text-3xl font-bold text-white">
               Interested in Joining?
             </p>
-            <Link className="no-underline" href="/">
+            <Link
+              className="no-underline"
+              href="https://highlanderlink.ucr.edu/organization/fencingatucr"
+            >
               <Button
                 variant="outline"
                 size="lg"
@@ -39,7 +42,10 @@ const Join = () => {
                 Membership Form
               </Button>
             </Link>
-            <Link className="no-underline" href="/">
+            <Link
+              className="no-underline"
+              href="https://discord.com/invite/hZ3ze29Rf9"
+            >
               <Button
                 variant="outline"
                 size="lg"

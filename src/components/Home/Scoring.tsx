@@ -33,9 +33,8 @@ const Scoring = () => {
             </div>
 
             <p className="pt-6 text-xl text-white md:text-2xl">
-              {" "}
               Fencers score points by striking opponents on a valid part of
-              their body or forcing their opponent off the piste.{" "}
+              their body or forcing their opponent off the piste.
             </p>
           </div>
         </div>
