@@ -15,8 +15,8 @@ const Title = ({ text }: props) => {
         <div id="bg-img-container" className="opacity-20">
           <Image
             src={background}
-            alt="Fencing Background"
             layout="fill"
+            alt="Fencing Background"
             objectFit="cover"
             quality={100}
             priority
