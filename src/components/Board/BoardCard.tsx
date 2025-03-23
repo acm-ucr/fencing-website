@@ -9,7 +9,7 @@ interface props {
 const BoardCard = ({ position, name, image }: props) => {
   return (
     <div className="text-center text-white">
-      <p className="mb-2 text-center text-xl font-bold text-blue-500">
+      <p className="mb-2 text-center text-xl font-bold text-fencing-border-blue">
         {position}
       </p>
       <Image
