@@ -8,14 +8,13 @@ import { motion } from "motion/react";
 const Join = () => {
   return (
     <>
+      <Title text="Join Us" />
       <motion.div
         className="box"
         initial={{ y: 50, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 1, delay: 0.2 }}
       >
-        <Title text="Join Us" />
-
         <div className="join flex items-center justify-center space-x-14 p-6">
           <div className="flex-shrink-0">
             <Image
@@ -57,15 +56,13 @@ const Join = () => {
             We look forward to seeing you soon! We have practice every Monday
             and Wednesday 8-10PM!
           </div>
-          <div className="h-1/2 w-4/5 rounded-lg border-2 border-blue-500 bg-gray-500">
-            <Image
-              className="object-contain"
-              width={1000}
-              height={1000}
-              src="/gallery/gallery_35.webp"
-              alt="Practice image"
-            />
-          </div>
+          <Image
+            className="rounded-lg object-contain"
+            height={1000}
+            width={1000}
+            src="/gallery/gallery_35.webp"
+            alt="Practice image"
+          />
         </div>
       </motion.div>
     </>
