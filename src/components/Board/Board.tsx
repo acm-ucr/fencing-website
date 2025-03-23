@@ -2,7 +2,7 @@
 import React from "react";
 import BoardCard from "@/components/Board/BoardCard";
 import { ITEMS } from "@/data/board";
-import Title from "../Title";
+import Title from "@/components/Title";
 import { motion } from "motion/react";
 
 function Board() {

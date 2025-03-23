@@ -18,7 +18,7 @@ const What = () => {
             duration: 1,
             delay: 0.5,
           }}
-          className="m-0 m-6 mb-6 w-full lg:w-5/12"
+          className="m-6 mb-6 w-full lg:w-5/12"
         >
           <Image
             src={Photo}

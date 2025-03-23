@@ -1,11 +1,7 @@
 import Image from "next/image";
 import footer from "@/public/footer.svg";
 import Link from "next/link";
-import {
-  SiInstagram,
-  SiGmail,
-  SiDiscord,
-} from "@icons-pack/react-simple-icons";
+import FooterLinks from "@/data/FooterLinks";
 
 const Footer = () => {
   return (
@@ -26,26 +22,16 @@ const Footer = () => {
           </p>
         </div>
         <div className="items-left flex flex-col gap-2 md:gap-4">
-          <Link
-            href="ucrfencingclub@gmail.com"
-            className="flex items-center gap-2 text-white"
-          >
-            <SiGmail className="hover:-translate-y-1" />
-            ucrfencingclub@email.com
-          </Link>
-          <Link
-            href="https://discord.com/invite/hZ3ze29Rf9"
-            className="flex items-center gap-2 text-white"
-          >
-            <SiDiscord className="hover:-translate-y-1" />
-            Fencing at UCR Discord
-          </Link>
-          <Link
-            href="https://www.instagram.com/fencingatucr/"
-            className="flex items-center gap-2 text-white"
-          >
-            <SiInstagram className="hover:-translate-y-1" /> @fencingatucr
-          </Link>
+          {FooterLinks.map(({ icon, link, text }, index) => (
+            <Link
+              href={link}
+              key={index}
+              target="blank"
+              className="flex items-center gap-2 text-white hover:-translate-y-1"
+            >
+              {icon} {text}
+            </Link>
+          ))}
         </div>
       </section>
     </div>
