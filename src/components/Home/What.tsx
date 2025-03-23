@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const What = () => {
   return (
-    <div className="flex items-center justify-center py-8">
+    <div className="flex justify-center py-8">
       <div className="flex w-5/6 flex-col gap-8 px-4 lg:flex-row lg:items-center">
         <motion.div
           initial={{ opacity: 0, x: -50 }}

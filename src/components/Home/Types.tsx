@@ -5,7 +5,7 @@ import sabre from "@/public/sabre.svg";
 
 const Types = () => {
   return (
-    <div className="mx-auto flex w-[90%] flex-col justify-center p-20 text-white">
+    <div className="mx-auto flex w-5/6 flex-col justify-center py-10 text-white">
       <div className="mb-10 hidden justify-items-center md:flex">
         <p className="flex h-20 w-[40%] min-w-[50px] items-center justify-center rounded-2xl border-4 border-blue-600 bg-[#008CFF33] py-3 text-center text-3xl font-bold">
           Types of Fencing Swords
