@@ -45,7 +45,7 @@ const Scoring = () => {
         transition={{ duration: 0.8, delay: 0.4 }}
       >
         <div className="flex w-full flex-col justify-center gap-16 pt-16 text-white md:flex-row">
-          {ScoringComponent.map(({heading, text}, index) => (
+          {ScoringComponent.map(({ heading, text }, index) => (
             <div key={index} className="flex flex-col">
               <p className="pb-4 text-2xl font-bold underline underline-offset-8 md:text-3xl">
                 {heading}

@@ -21,7 +21,7 @@ const Types = () => {
         className=""
       >
         <div className="mb-10 hidden justify-items-center md:flex">
-          <p className="flex h-20 w-[40%] min-w-[50px] items-center justify-center rounded-2xl border-4 border-fencing-border-blue bg-fencing-border-background-blue py-3 text-center text-3xl font-bold">
+          <p className="bg-fencing-border-background-blue flex h-20 w-[40%] min-w-[50px] items-center justify-center rounded-2xl border-4 border-fencing-border-blue py-3 text-center text-3xl font-bold">
             Types of Fencing Swords
           </p>
         </div>
