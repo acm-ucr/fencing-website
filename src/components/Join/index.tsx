@@ -15,7 +15,6 @@ const Join = () => {
         transition={{ duration: 1, delay: 0.2 }}
       >
         <Title text="Join Us" />
-
         <div className="join flex items-center justify-center space-x-14 p-6">
           <div className="flex-shrink-0">
             <Image
