@@ -15,7 +15,7 @@ const Join = () => {
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 1, delay: 0.2 }}
       >
-        <div className="join flex items-center justify-center space-x-14 p-6">
+        <div className="join flex items-center justify-center gap-10 pt-20">
           <div className="flex-shrink-0">
             <Image
               className="h-70 w-80 object-contain"
@@ -57,7 +57,7 @@ const Join = () => {
             and Wednesday 8-10PM!
           </div>
           <Image
-            className="rounded-lg object-contain"
+            className="w-4/5 rounded-lg object-contain"
             height={1000}
             width={1000}
             src="/gallery/gallery_35.webp"
