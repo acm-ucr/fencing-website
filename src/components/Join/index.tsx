@@ -57,7 +57,15 @@ const Join = () => {
             We look forward to seeing you soon! We have practice every Monday
             and Wednesday 8-10PM!
           </div>
-          <div className="h-1/2 w-4/5 rounded-lg border-2 border-blue-500 bg-gray-500"></div>
+          <div className="h-1/2 w-4/5 rounded-lg border-2 border-blue-500 bg-gray-500">
+            <Image
+              className="object-contain"
+              width={1000}
+              height={1000}
+              src="/gallery/gallery_35.webp"
+              alt="Practice image"
+            />
+          </div>
         </div>
       </motion.div>
     </>
