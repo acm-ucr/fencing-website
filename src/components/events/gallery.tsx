@@ -2,7 +2,6 @@
 import Image from "next/image";
 import { galleryItems } from "@/data/gallery";
 import Title from "../Title";
-import { motion } from "motion/react";
 
 export default function Gallery() {
   return (
