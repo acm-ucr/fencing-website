@@ -15,7 +15,6 @@ const Join = () => {
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 1, delay: 0.2 }}
       >
-        <Title text="Join Us" />
         <div className="join flex items-center justify-center gap-10 pt-20">
           <div className="flex-shrink-0">
             <Image
