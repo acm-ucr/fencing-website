@@ -7,7 +7,7 @@ import Image from "next/image";
 const What = () => {
   return (
     <div className="flex items-center justify-center py-8">
-      <div className="flex w-full max-w-7xl flex-col gap-8 px-4 lg:flex-row lg:items-center">
+      <div className="flex w-5/6 flex-col gap-8 px-4 lg:flex-row lg:items-center">
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           whileInView={{
@@ -15,10 +15,10 @@ const What = () => {
             opacity: 1,
           }}
           transition={{
-            duration: 0.7,
+            duration: 1,
             delay: 0.1,
           }}
-          className="w-full lg:w-5/12"
+          className="m-0 m-6 mb-6 w-full lg:w-5/12"
         >
           <Image
             src={Photo}

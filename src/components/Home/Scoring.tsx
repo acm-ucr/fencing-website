@@ -4,9 +4,9 @@ import { ScoringComponent } from "@/data/ScoringComponent";
 
 const Scoring = () => {
   return (
-    <div className="bg-[#091422] px-36 pb-20">
+    <div className="w-5/6 pb-20">
       <div className="flex flex-col items-center justify-center gap-10 text-white md:flex-row">
-        <div className="flex items-center justify-center md:w-[40%]">
+        <div className="items-center justify-center md:w-[40%]">
           <div className="w-[80%] md:w-[100%]">
             <Image src={Score} alt="Score Pic" />
           </div>
@@ -20,9 +20,8 @@ const Scoring = () => {
           </div>
 
           <p className="pt-6 text-xl text-white md:text-2xl">
-            {" "}
             Fencers score points by striking opponents on a valid part of their
-            body or forcing their opponent off the piste.{" "}
+            body or forcing their opponent off the piste.
           </p>
         </div>
       </div>
