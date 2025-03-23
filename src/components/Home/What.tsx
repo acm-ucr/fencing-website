@@ -18,7 +18,7 @@ const What = () => {
             duration: 1,
             delay: 0.5,
           }}
-          className="m-0 m-6 mb-6 w-full lg:w-5/12"
+          className="m-6 mb-6 w-full lg:w-5/12"
         >
           <Image
             src={Photo}
@@ -40,11 +40,11 @@ const What = () => {
           className="w-full lg:w-7/12"
         >
           <div className="relative">
-            <div className="absolute left-0 right-0 top-0 mx-auto w-48 -translate-y-1/2 rounded-xl border-4 border-[#1D70E8] bg-[#082c4f] px-4 py-3 text-center text-xl font-bold text-white md:text-2xl lg:w-64 lg:text-3xl">
+            <div className="absolute left-0 right-0 top-0 mx-auto w-48 -translate-y-1/2 rounded-xl border-4 border-fencing-border-blue bg-fencing-title-background-blue px-4 py-3 text-center text-xl font-bold text-white md:text-2xl lg:w-64 lg:text-3xl">
               What we do!
             </div>
 
-            <div className="rounded-lg bg-[#0e4377] p-6 pt-12 text-base text-white md:p-8 md:pt-16 md:text-xl lg:p-10 lg:pt-16 lg:text-2xl">
+            <div className="rounded-lg bg-fencing-border-blue/60 p-6 pt-12 text-base text-white md:p-8 md:pt-16 md:text-xl lg:p-10 lg:pt-16 lg:text-2xl">
               The UCR Fencing Club is a community for students who are
               passionate about the sport of fencing. Whether you are a beginner
               or an experienced fencer, we provide a welcoming environment for

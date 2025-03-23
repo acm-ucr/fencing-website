@@ -2,12 +2,12 @@
 import React from "react";
 import Image from "next/image";
 import background from "@/public/background.webp";
-import Button from "../Button";
+import Button from "@/components/Button";
 import { motion } from "motion/react";
 
 const Landing = () => {
   return (
-    <div className="relative flex w-full flex-col items-center justify-center p-10 py-44">
+    <div className="relative flex w-full flex-col items-center justify-center py-44">
       <div className="absolute inset-0 opacity-20">
         <Image
           src={background}
@@ -31,10 +31,8 @@ const Landing = () => {
         }}
         className="relative z-10 text-center"
       >
-        <div className="px-10 py-2 pb-4 text-5xl font-bold text-white">
-          Fencing Club
-        </div>
-        <p className="px-10 pb-5 text-2xl italic text-white/85">
+        <div className="pb-4 text-5xl font-bold text-white">Fencing Club</div>
+        <p className="pb-5 text-2xl italic text-white/85">
           University of California, Riverside
         </p>
         <Button link="/join" text="Join Now!" />
