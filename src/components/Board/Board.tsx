@@ -1,7 +1,9 @@
+"use client";
 import React from "react";
 import BoardCard from "@/components/Board/BoardCard";
 import { ITEMS } from "@/data/board";
 import Title from "../Title";
+import { motion } from "motion/react";
 
 function Board() {
   return (
