@@ -19,9 +19,7 @@ const Scoring = () => {
               whileInView={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              <div className="w-[80%] md:w-[100%]">
-                <Image src={Score} alt="Score Pic" />
-              </div>
+              <Image src={Score} className="w-4/5 md:w-full" alt="Score Pic" />
             </motion.div>
           </div>
 

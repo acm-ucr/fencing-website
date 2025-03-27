@@ -20,7 +20,7 @@ import Title from "../Title";
 const Events = () => {
   const [current, setCurrent] = useState<EventProps>({});
 
-  const { isPending, error, data } = useQuery({
+  const { data } = useQuery({
     queryKey: ["repoData"],
     queryFn: async () => {
       const response =
@@ -46,9 +46,6 @@ const Events = () => {
       return events;
     },
   });
-
-  // TODO: HANDLE ERROR AND PENDING STATES
-  console.log(error, isPending);
 
   return (
     <>
