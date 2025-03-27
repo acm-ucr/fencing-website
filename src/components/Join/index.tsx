@@ -4,10 +4,11 @@ import Image from "next/image";
 import Link from "next/link";
 import Title from "@/components/Title";
 import { motion } from "motion/react";
+import Player from "@/public/player.svg";
 
 const Join = () => {
   return (
-    <>
+    <div className="">
       <Title text="Join Us" />
       <motion.div
         className="box"
@@ -15,45 +16,44 @@ const Join = () => {
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 1, delay: 0.5 }}
       >
-        <div className="join flex flex-col items-center justify-center gap-10 pt-20 md:flex-row">
-          <div className="flex-shrink-0">
+        <div className="flex w-full flex-row justify-center pl-5">
+          <div className="join flex w-[90%] flex-col items-center justify-center sm:flex-row md:flex-row lg:w-4/5">
             <Image
-              className="h-70 w-80 object-contain"
-              src="/player.svg"
+              className="w-4/5 pb-5 sm:w-1/2 sm:pb-0"
+              src={Player}
               alt="Fencer silhouette"
-              width={192}
-              height={192}
             />
-          </div>
 
-          <div className="flex flex-col items-center text-center">
-            <p className="mb-4 text-3xl font-bold text-white">
-              Interested in Joining?
-            </p>
-            <Link
-              className="no-underline"
-              href="https://highlanderlink.ucr.edu/organization/fencingatucr"
-            >
-              <Button
-                variant="outline"
-                size="lg"
-                className="text-md mb-5 w-80 border-2 border-fencing-border-blue bg-fencing-border-blue/30 text-white hover:bg-fencing-border-blue hover:text-white"
+            <div className="flex flex-col items-center text-center sm:w-1/2">
+              <p className="mb-4 text-3xl font-bold text-white md:text-3xl xl:text-5xl">
+                Interested in Joining?
+              </p>
+
+              <Link
+                className="no-underline"
+                href="https://highlanderlink.ucr.edu/organization/fencingatucr"
               >
-                Membership Form
-              </Button>
-            </Link>
-            <Link
-              className="no-underline"
-              href="https://discord.com/invite/hZ3ze29Rf9"
-            >
-              <Button
-                variant="outline"
-                size="lg"
-                className="text-md w-80 border-2 border-fencing-border-blue bg-fencing-border-blue/30 text-white hover:bg-fencing-border-blue hover:text-white"
+                <Button
+                  variant="outline"
+                  size="lg"
+                  className="text-md mb-5 w-80 border-2 border-fencing-border-blue bg-fencing-border-blue/30 text-white hover:bg-fencing-border-blue hover:text-white lg:text-2xl"
+                >
+                  Membership Form
+                </Button>
+              </Link>
+              <Link
+                className="no-underline"
+                href="https://discord.com/invite/hZ3ze29Rf9"
               >
-                Discord Server
-              </Button>
-            </Link>
+                <Button
+                  variant="outline"
+                  size="lg"
+                  className="text-md w-80 border-2 border-fencing-border-blue bg-fencing-border-blue/30 text-white hover:bg-fencing-border-blue hover:text-white lg:text-2xl"
+                >
+                  Discord Server
+                </Button>
+              </Link>
+            </div>
           </div>
         </div>
 
@@ -71,7 +71,7 @@ const Join = () => {
           />
         </div>
       </motion.div>
-    </>
+    </div>
   );
 };
 
