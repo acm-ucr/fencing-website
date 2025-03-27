@@ -47,9 +47,6 @@ const Events = () => {
     },
   });
 
-  // TODO: HANDLE ERROR AND PENDING STATES
-  console.log(error, isPending);
-
   return (
     <>
       <Title text="Events" />
